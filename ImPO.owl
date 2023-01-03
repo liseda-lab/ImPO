@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://katy-project.eu/kg#"
-     xml:base="https://katy-project.eu/kg"
+<rdf:RDF xmlns="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
+     xml:base="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:kg="https://katy-project.eu/kg#"
+     xmlns:kg="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://katy-project.eu/kg">
+    <owl:Ontology rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl">
         <dc:creator>Ashwin Kallor</dc:creator>
         <dc:creator>Catia Pesquita</dc:creator>
         <dc:creator>Daniel Faria</dc:creator>
@@ -70,251 +70,251 @@
     
 
 
-    <!-- https://katy-project.eu/kg#association_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#association_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#association_of">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#has_association"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#association_of">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_association"/>
         <rdfs:label>Associated Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#cancer_type_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer_type_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#cancer_type_of">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#has_cancer_type"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#cancer"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer_type_of">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cancer_type"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:label>Cancer Type Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#cause_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cause_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#cause_of">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#has_cause"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cause_of">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cause"/>
         <rdfs:label>Cause Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#feature_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#feature_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#feature_of">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#has_feature"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#analyte"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#feature_of">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_feature"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:label>Feature of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_association -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_association -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_association">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_association">
         <rdfs:label>Has Association</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_cancer_type -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cancer_type -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_cancer_type">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cancer_type">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#cancer"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <rdfs:label>Has Cancer Type</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_cause -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cause -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_cause">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cause">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label>Has Cause</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_feature -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_feature -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_feature">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_feature">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:label>Has Feature</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_input -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_input -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_input">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#input_of"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#assay"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_input">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#input_of"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:label>Has Input</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_occurrence -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_occurrence -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_occurrence">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#occurs_in"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_occurrence">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in"/>
         <rdfs:label>Has Occurrence</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_output -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_output -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_output">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#output_of"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#assay"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#result"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_output">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#output_of"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
         <rdfs:label>Has Output</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_part -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_part -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_part">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#part_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_part">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>Has Part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_product -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_product -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_product">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#product_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_product">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of"/>
         <rdfs:label>Has Product</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_realization -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_realization -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_realization">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#realization_of"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#study"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#publication"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_realization">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#realization_of"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
         <rdfs:label>Has Realization</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_reference_genome -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_reference_genome -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_reference_genome">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_reference_genome">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_role -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_role -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_role">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#role_of"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_role">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#role_of"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <rdfs:label>Has Role</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_sample_type -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sample_type -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_sample_type">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#sample_type_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sample_type">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type_of"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample_type"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
         <rdfs:label>Has Sample Type</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_source -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_source">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#source_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#source_of"/>
         <rdfs:label>Has Source</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_specimen -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_specimen -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_specimen">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#specimen_of"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#patient"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_specimen">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#specimen_of"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:label>Has Specimen</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_subject -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_subject -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_subject">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#subject_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_subject">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#subject_of"/>
         <rdfs:label>Has Subject</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_target -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#has_target">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#target_of"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#target_of"/>
         <rdfs:label>Has Target</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#identifies -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#identifies -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#identifies">
-        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#is_identified"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#identifies">
+        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#is_identified"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#analyte"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#result"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#analyte"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:label>Identifies</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#input_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#input_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#input_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#assay"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#input_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:label>Input Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#is_identified -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#is_identified -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#is_identified">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#is_identified">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#analyte"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#result"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -323,101 +323,101 @@
     
 
 
-    <!-- https://katy-project.eu/kg#occurs_in -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#occurs_in">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in">
         <rdfs:label>Occurs in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#output_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#output_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#output_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#result"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#assay"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#output_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:label>Output Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#part_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#part_of">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>Part Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#product_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#product_of">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>Product Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#realization_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#realization_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#realization_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#publication"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#study"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#realization_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
         <rdfs:label>Realization Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#role_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#role_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#role_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#cancer"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#role_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:label>Role Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#sample_type_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#sample_type_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample_type"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:label>Sample Type Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#source_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#source_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#source_of">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#source_of">
         <rdfs:label>Source Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#specimen_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#specimen_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#specimen_of">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
-        <rdfs:range rdf:resource="https://katy-project.eu/kg#patient"/>
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#specimen_of">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
         <rdfs:label>Specimen Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#subject_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#subject_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#subject_of">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#subject_of">
         <rdfs:label>Subject Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#target_of -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#target_of -->
 
-    <owl:ObjectProperty rdf:about="https://katy-project.eu/kg#target_of">
+    <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#target_of">
         <rdfs:label>Target Of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -434,54 +434,54 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_aa_change -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_aa_change -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_aa_change">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#amino_acid_substitution"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_aa_change">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Amino Acid Change</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_accession -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_accession -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_accession">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#protein"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_accession">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Accession</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_allele -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_allele -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_allele">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_allele">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Allele</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_analysis_strategy -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_analysis_strategy -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_analysis_strategy">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#spectrum_peptide_identification"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_analysis_strategy">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum_peptide_identification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Analysis Strategy</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_annotation -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_annotation -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_annotation">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_annotation">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#post_translational_modification"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#reference_genome"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#post_translational_modification"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#reference_genome"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -491,16 +491,16 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_chromosome_number -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_chromosome_number -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_chromosome_number">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_chromosome_number">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_mutation"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_region"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#peptide_genome_assignment"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_genome_assignment"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -510,99 +510,99 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_class -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_class -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_class">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_class">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label>Has Class</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_cluster -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cluster -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_cluster">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#motif"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cluster">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label>Has Cluster</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_code -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_code -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_code">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_code">
         <rdfs:label>Has Code</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_component_1 -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_1 -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_component_1">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_1">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#motif"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Component 1</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_component_2 -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_2 -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_component_2">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_2">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#motif"/>
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Component 2</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_contig -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_contig -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_contig">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_mutation"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_contig">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label>Has Contig</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_cosmic_id -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cosmic_id -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_cosmic_id">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_mutation"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cosmic_id">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Cosmic ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_country -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_country -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_country">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#patient"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_country">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Country</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_doi -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_doi -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_doi">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#publication"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_doi">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has DOI</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_end_position -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_end_position">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -617,39 +617,39 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_expression -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_expression -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_expression">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_expression">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Expression</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_file_location -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_file_location -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_file_location">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#spectrum"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_file_location">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has File Location</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_gene_mutational_ratio -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_gene_mutational_ratio -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_gene_mutational_ratio">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_gene_mutational_ratio">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Gene Mutational Ratio</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_hgvsp -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_hgvsp -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_hgvsp">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#amino_acid_substitution"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_hgvsp">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>series of variants on one chromosome</rdfs:comment>
         <rdfs:label>Has HGVSP</rdfs:label>
@@ -657,101 +657,101 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_id -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_id">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id">
         <rdfs:label>Has ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_immune_score -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_immune_score -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_immune_score">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_immune_score">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Immune Score</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_inference -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_inference -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_inference">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#motif_hla_assignment"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_inference">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_hla_assignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Inference</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_instrument -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_instrument -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_instrument">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#assay"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_instrument">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Instrument</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_name -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_name -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_name">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_name">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_overlap_score -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_overlap_score -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_overlap_score">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_overlap_score">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Overlap Score</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_parameter_file -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_parameter_file -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_parameter_file">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#assay"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_parameter_file">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Parameter File</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_population_coverage -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_population_coverage -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_population_coverage">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#genomic_hotspot"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_population_coverage">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Population Coverage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_position -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_position -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_position">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#associated_with_ptm"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_position">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#associated_with_ptm"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>Has Position</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_score -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_score -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_score">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_score">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_hotspot"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#spectrum_peptide_identification"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum_peptide_identification"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -761,19 +761,19 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_sequence -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sequence -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_sequence">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#peptide"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sequence">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Sequence</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_start_position -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_start_position">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -788,14 +788,14 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_strand -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_strand -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_strand">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_strand">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_mutation"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_region"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -805,35 +805,35 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_tag -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_tag -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_tag">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#peptide_transcript_assignment"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_tag">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Tag</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_treatment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_treatment -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_treatment">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_treatment">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has Treatment</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_type -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_type -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_type">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_type">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#cancer"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#genomic_mutation"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -843,19 +843,19 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_url -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_url -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_url">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#publication"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_url">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>Has URL</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://katy-project.eu/kg#has_value -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_value -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_value">
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_value">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Value</rdfs:label>
@@ -863,10 +863,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#has_weight -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_weight -->
 
-    <owl:DatatypeProperty rdf:about="https://katy-project.eu/kg#has_weight">
-        <rdfs:domain rdf:resource="https://katy-project.eu/kg#sample"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_weight">
+        <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>Has Weight</rdfs:label>
     </owl:DatatypeProperty>
@@ -884,10 +884,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#acute_myeloid_leukemia -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#acute_myeloid_leukemia -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#acute_myeloid_leukemia">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#leukemia"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#acute_myeloid_leukemia">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#leukemia"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA26787-4</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU007776</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000043424</oboInOwl:hasDbXref>
@@ -909,24 +909,24 @@
     
 
 
-    <!-- https://katy-project.eu/kg#amino_acid_substitution -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#amino_acid_substitution">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#mutation"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mutation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#genomic_mutation"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#occurs_in"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#peptide"/>
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#protein"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -934,7 +934,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_hgvsp"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_hgvsp"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -945,34 +945,34 @@
     
 
 
-    <!-- https://katy-project.eu/kg#analyte -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#analyte">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte">
         <rdfs:comment>The molecular entity being analyzed, whether gene, transcript or protein.</rdfs:comment>
         <rdfs:label>Analyte</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://katy-project.eu/kg#assay -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#assay">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_input"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#sample"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_input"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_output"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#result"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_output"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#part_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#study"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C16341</oboInOwl:hasDbXref>
@@ -984,17 +984,17 @@
     
 
 
-    <!-- https://katy-project.eu/kg#assignment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#assignment">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#analyte"/>
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#result"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1002,8 +1002,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#analyte"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C25426</oboInOwl:hasDbXref>
@@ -1013,24 +1013,24 @@
     
 
 
-    <!-- https://katy-project.eu/kg#associated_with_ptm -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#associated_with_ptm -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#associated_with_ptm">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#associated_with_ptm">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#mass_shift"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#post_translational_modification"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#post_translational_modification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1040,10 +1040,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#brain_cancer -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#brain_cancer -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#brain_cancer">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#brain_cancer">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000038717</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000038958</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/DOID_1319</oboInOwl:hasDbXref>
@@ -1060,9 +1060,9 @@
     
 
 
-    <!-- https://katy-project.eu/kg#cancer -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#cancer">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer">
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA25513-5</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU070317</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000041060</oboInOwl:hasDbXref>
@@ -1077,10 +1077,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#clear_cell_renal_cell_carcinoma -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#clear_cell_renal_cell_carcinoma -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#clear_cell_renal_cell_carcinoma">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#kidney_cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#clear_cell_renal_cell_carcinoma">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#kidney_cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000039997</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/DOID_4467</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/HP_0006770</oboInOwl:hasDbXref>
@@ -1096,10 +1096,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#colon_cancer -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#colon_cancer -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#colon_cancer">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#colon_cancer">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA10537-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/114500</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU017046</oboInOwl:hasDbXref>
@@ -1120,10 +1120,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#colorectal -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#colorectal -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#colorectal">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#tissue"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#colorectal">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0012652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0013067</oboInOwl:hasDbXref>
         <rdfs:comment>Tissue derived from the colorectal region of the body comprising the colon and the rectum and may be either freshly harvested or frozen.</rdfs:comment>
@@ -1132,20 +1132,20 @@
     
 
 
-    <!-- https://katy-project.eu/kg#expression -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#expression -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#expression">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#expression">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_subject"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_subject"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#gene"/>
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#protein"/>
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#transcript"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#gene"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:onClass>
@@ -1153,7 +1153,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_value"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_value"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -1165,35 +1165,35 @@
     
 
 
-    <!-- https://katy-project.eu/kg#gene -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#gene -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#gene">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#genomic_region"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#gene">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_reference_genome"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#reference_genome"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_reference_genome"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#reference_genome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#product_of"/>
+                        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#transcript"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_name"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1212,18 +1212,18 @@
     
 
 
-    <!-- https://katy-project.eu/kg#genomic_hotspot -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#genomic_hotspot">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#genomic_region"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_part"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_part"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#gene"/>
-                            <rdf:Description rdf:about="https://katy-project.eu/kg#peptide"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#gene"/>
+                            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1231,37 +1231,37 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_expression"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_expression"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_gene_mutational_ratio"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_gene_mutational_ratio"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_immune_score"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_immune_score"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_overlap_score"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_overlap_score"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_population_coverage"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_population_coverage"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -1272,43 +1272,43 @@
     
 
 
-    <!-- https://katy-project.eu/kg#genomic_mutation -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#genomic_mutation">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#mutation"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mutation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#occurs_in"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#genomic_region"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_chromosome_number"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_chromosome_number"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_cosmic_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cosmic_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_end_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_start_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_strand"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_strand"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1319,31 +1319,31 @@
     
 
 
-    <!-- https://katy-project.eu/kg#genomic_region -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#genomic_region">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_region">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_chromosome_number"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_chromosome_number"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_end_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_start_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_strand"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_strand"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1353,10 +1353,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#glioblastoma -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#glioblastoma -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#glioblastoma">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#glioma"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#glioblastoma">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#glioma"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU008964</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU036792</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/DOID_3068</oboInOwl:hasDbXref>
@@ -1377,10 +1377,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#glioma -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#glioma -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#glioma">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#brain_cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#glioma">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#brain_cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU011462</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/DOID_3070</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/HP_0009733</oboInOwl:hasDbXref>
@@ -1400,10 +1400,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#hepatocellular_carcinoma -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#hepatocellular_carcinoma -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#hepatocellular_carcinoma">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#liver_cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#hepatocellular_carcinoma">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#liver_cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/114550</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU008946</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000039892</oboInOwl:hasDbXref>
@@ -1424,19 +1424,19 @@
     
 
 
-    <!-- https://katy-project.eu/kg#human_leukocyte_antigen -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#human_leukocyte_antigen">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#feature_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#sample"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#feature_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_allele"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_allele"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1451,30 +1451,30 @@
     
 
 
-    <!-- https://katy-project.eu/kg#human_leukocyte_antigen_1 -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_1 -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#human_leukocyte_antigen_1">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_1">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:comment>A member of the HLA family presenting antigens of either self or viral origin, ranging between 8-15 amino acids in length.</rdfs:comment>
         <rdfs:label>Human Leukocyte Antigen 1 (HLA 1)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://katy-project.eu/kg#human_leukocyte_antigen_2 -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_2 -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#human_leukocyte_antigen_2">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_2">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:comment>A member of the HLA family presenting antigens of external origin, such as bacterial, ranging between 8-20 amino acids in length.</rdfs:comment>
         <rdfs:label>Human Leukocyte Antigen 2 (HLA 2)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://katy-project.eu/kg#kidney_cancer -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#kidney_cancer -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#kidney_cancer">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#kidney_cancer">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA10541-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/607585</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000038140</oboInOwl:hasDbXref>
@@ -1489,10 +1489,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#leukemia -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#leukemia -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#leukemia">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#leukemia">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA10545-4</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU008966</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000041186</oboInOwl:hasDbXref>
@@ -1511,10 +1511,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#liver_cancer -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#liver_cancer -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#liver_cancer">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#cancer"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#liver_cancer">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/114550</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/OMIM/MTHU019145</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000038968</oboInOwl:hasDbXref>
@@ -1532,18 +1532,18 @@
     
 
 
-    <!-- https://katy-project.eu/kg#mass_shift -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#mass_shift">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#occurs_in"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#occurs_in"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_value"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_value"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -1554,25 +1554,25 @@
     
 
 
-    <!-- https://katy-project.eu/kg#mass_spectrometry -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_spectrometry -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#mass_spectrometry">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assay"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_spectrometry">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_output"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#spectrum"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_output"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_instrument"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_instrument"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_parameter_file"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_parameter_file"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1585,31 +1585,31 @@
     
 
 
-    <!-- https://katy-project.eu/kg#motif -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#motif">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_part"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_component_1"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_1"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_component_2"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_component_2"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_cluster"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cluster"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -1622,25 +1622,25 @@
     
 
 
-    <!-- https://katy-project.eu/kg#motif_hla_assignment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_hla_assignment -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#motif_hla_assignment">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assignment"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_hla_assignment">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#motif"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#human_leukocyte_antigen"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_inference"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_inference"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1650,10 +1650,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#mutation -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mutation -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#mutation">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mutation">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GENO_0000492</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C45576</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000109</oboInOwl:hasDbXref>
@@ -1664,28 +1664,28 @@
     
 
 
-    <!-- https://katy-project.eu/kg#patient -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#patient">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#specimen_of"/>
+                        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#specimen_of"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#sample"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_country"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_country"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1693,13 +1693,13 @@
     
 
 
-    <!-- https://katy-project.eu/kg#peptide -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#peptide">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_sequence"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sequence"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1713,37 +1713,37 @@
     
 
 
-    <!-- https://katy-project.eu/kg#peptide_genome_assignment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_genome_assignment -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#peptide_genome_assignment">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assignment"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_genome_assignment">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#reference_genome"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#reference_genome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_chromosome_number"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_chromosome_number"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_end_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_start_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1753,31 +1753,31 @@
     
 
 
-    <!-- https://katy-project.eu/kg#peptide_protein_assignment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_protein_assignment -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#peptide_protein_assignment">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assignment"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_protein_assignment">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#protein"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_end_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_end_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_start_position"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_start_position"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1787,25 +1787,25 @@
     
 
 
-    <!-- https://katy-project.eu/kg#peptide_transcript_assignment -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#peptide_transcript_assignment">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assignment"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#transcript"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_tag"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_tag"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1815,10 +1815,10 @@
     
 
 
-    <!-- https://katy-project.eu/kg#peripheral_blood_mononuclear_cells -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peripheral_blood_mononuclear_cells -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#peripheral_blood_mononuclear_cells">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#tissue"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peripheral_blood_mononuclear_cells">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/CLO_0037274</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C12954</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C138972</oboInOwl:hasDbXref>
@@ -1828,25 +1828,25 @@
     
 
 
-    <!-- https://katy-project.eu/kg#post_translational_modification -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#post_translational_modification -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#post_translational_modification">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#post_translational_modification">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#association_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#mass_shift"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#association_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_annotation"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_annotation"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_name"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1859,19 +1859,19 @@
     
 
 
-    <!-- https://katy-project.eu/kg#protein -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#protein">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#product_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#transcript"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1893,18 +1893,18 @@
     
 
 
-    <!-- https://katy-project.eu/kg#publication -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#publication">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#realization_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#study"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#realization_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_url"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_url"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1918,13 +1918,13 @@
     
 
 
-    <!-- https://katy-project.eu/kg#reference_genome -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#reference_genome -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#reference_genome">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#reference_genome">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_annotation"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_annotation"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1943,17 +1943,17 @@
     
 
 
-    <!-- https://katy-project.eu/kg#result -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#result">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://katy-project.eu/kg#has_output"/>
+                        <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_output"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#assay"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C20200</oboInOwl:hasDbXref>
@@ -1964,31 +1964,31 @@
     
 
 
-    <!-- https://katy-project.eu/kg#sample -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#sample">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#part_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#tissue"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_sample_type"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sample_type"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://katy-project.eu/kg#sample_type"/>
+                <owl:onClass rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_treatment"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_treatment"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2001,15 +2001,15 @@
     
 
 
-    <!-- https://katy-project.eu/kg#sample_type -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#sample_type">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#cell_line"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#patient"/>
-                    <rdf:Description rdf:about="https://katy-project.eu/kg#patient_pool"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cell_line"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
+                    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient_pool"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2019,13 +2019,13 @@
     
 
 
-    <!-- https://katy-project.eu/kg#spectrum -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#spectrum">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#result"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2036,31 +2036,31 @@
     
 
 
-    <!-- https://katy-project.eu/kg#spectrum_peptide_identification -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum_peptide_identification -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#spectrum_peptide_identification">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#assignment"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum_peptide_identification">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_source"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#spectrum"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_source"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_target"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#peptide"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_target"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_analysis_strategy"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_analysis_strategy"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_score"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_score"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2070,12 +2070,12 @@
     
 
 
-    <!-- https://katy-project.eu/kg#study -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#study">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2088,13 +2088,13 @@
     
 
 
-    <!-- https://katy-project.eu/kg#tissue -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#tissue">
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#part_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#patient"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP200029-9</oboInOwl:hasDbXref>
@@ -2113,25 +2113,25 @@
     
 
 
-    <!-- https://katy-project.eu/kg#transcript -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript -->
 
-    <owl:Class rdf:about="https://katy-project.eu/kg#transcript">
-        <rdfs:subClassOf rdf:resource="https://katy-project.eu/kg#analyte"/>
+    <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#transcript">
+        <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#product_of"/>
-                <owl:someValuesFrom rdf:resource="https://katy-project.eu/kg#gene"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#product_of"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#gene"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_id"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://katy-project.eu/kg#has_name"/>
+                <owl:onProperty rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2154,26 +2154,26 @@
     
 
 
-    <!-- https://katy-project.eu/kg#cell_line -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cell_line -->
 
-    <owl:NamedIndividual rdf:about="https://katy-project.eu/kg#cell_line">
-        <rdf:type rdf:resource="https://katy-project.eu/kg#sample_type"/>
+    <owl:NamedIndividual rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cell_line">
+        <rdf:type rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://katy-project.eu/kg#patient -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient -->
 
-    <owl:NamedIndividual rdf:about="https://katy-project.eu/kg#patient">
-        <rdf:type rdf:resource="https://katy-project.eu/kg#sample_type"/>
+    <owl:NamedIndividual rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient">
+        <rdf:type rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://katy-project.eu/kg#patient_pool -->
+    <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient_pool -->
 
-    <owl:NamedIndividual rdf:about="https://katy-project.eu/kg#patient_pool">
-        <rdf:type rdf:resource="https://katy-project.eu/kg#sample_type"/>
+    <owl:NamedIndividual rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient_pool">
+        <rdf:type rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <has_allele></has_allele>
@@ -2189,7 +2189,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="https://katy-project.eu/kg#patient">
+    <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient">
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C16960</oboInOwl:hasDbXref>
         <rdfs:label>Patient</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP66710-2</oboInOwl:hasDbXref>
@@ -2215,19 +2215,19 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://katy-project.eu/kg#analyte"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#assay"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#assignment"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#associated_with_ptm"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#cancer"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#mass_shift"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#patient"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#publication"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#result"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#sample"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#sample_type"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#study"/>
-            <rdf:Description rdf:about="https://katy-project.eu/kg#tissue"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assignment"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#associated_with_ptm"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
+            <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
