@@ -1,5 +1,5 @@
-<https://github.com/liseda-lab/ImPO/blob/main/ImPO.owlInds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://github.com/liseda-lab/ImPO/blob/main/ImPO.owlInds> <http://www.w3.org/2002/07/owl#imports> <http://www.semanticweb.org/katy-project/ImPO> .
+<https://github.com/liseda-lab/ImPO/blob/main/ImPOinds.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/liseda-lab/ImPO/blob/main/ImPOinds.owl> <http://www.w3.org/2002/07/owl#imports> <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl> .
 <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#AAMLDTVVFK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#AAMLDTVVFK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide> .
 <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#AAMLDTVVFK> <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#part_of> <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot_000005> .
