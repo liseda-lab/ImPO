@@ -18,8 +18,7 @@
         <dc:creator>Javier A. Alfaro</dc:creator>
         <dc:creator>Patrícia Eugénio</dc:creator>
         <dc:title>ImPO: The ImmunoPeptidomics Ontology</dc:title>
-        <dc:description>ImPO standardizes the terminology and semantics of immunopeptidomics experimental processes and bioinformatics analysis for 
-                                    facilitated data integration and analysis.</dc:description>
+        <dc:description>ImPO standardizes the terminology and semantics of immunopeptidomics experimental processes and bioinformatics analysis for facilitated data integration and analysis.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
