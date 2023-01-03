@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://katy-project.eu/kg#"
      xml:base="https://katy-project.eu/kg"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ip="https://katy-project.eu/kg#ip:"
      xmlns:kg="https://katy-project.eu/kg#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -58,18 +57,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    
-
-
-    <!-- https://katy-project.eu/kg#ip:Creator -->
-
-    <owl:AnnotationProperty rdf:about="https://katy-project.eu/kg#ip:Creator"/>
-    
-
-
-    <!-- https://katy-project.eu/kg#ip:rights -->
-
-    <owl:AnnotationProperty rdf:about="https://katy-project.eu/kg#ip:rights"/>
     
 
 
