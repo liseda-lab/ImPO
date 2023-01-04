@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xml:base="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:kg="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
+     xmlns:impo="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,12 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl">
-        <dc:creator>Ashwin Kallor</dc:creator>
-        <dc:creator>Catia Pesquita</dc:creator>
-        <dc:creator>Daniel Faria</dc:creator>
-        <dc:creator>Georges Bedran</dc:creator>
-        <dc:creator>Javier A. Alfaro</dc:creator>
-        <dc:creator>Patrícia Eugénio</dc:creator>
+        <dc:creator>Ashwin Adrian Kallor, Catia Pesquita, Daniel Faria, Georges Bedran, Javier A. Alfaro, Patrícia Eugénio</dc:creator>
         <dc:title>ImPO: The ImmunoPeptidomics Ontology</dc:title>
         <dc:description>ImPO standardizes the terminology and semantics of immunopeptidomics experimental processes and bioinformatics analysis for facilitated data integration and analysis.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
