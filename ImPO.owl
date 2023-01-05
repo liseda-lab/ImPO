@@ -1201,6 +1201,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000704</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.drugtargetontology.org/dto/DTO_00200000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035818</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene</oboInOwl:hasDbXref>
         <rdfs:comment>A polynucleotide sequence consisting of both coding and non-coding regions transcribed and translated to produce a polypeptide (protein).</rdfs:comment>
         <rdfs:label>Gene</rdfs:label>
     </owl:Class>
@@ -1702,6 +1703,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/CHEBI_16670</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C735</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00021328</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#peptide</oboInOwl:hasDbXref>
         <rdfs:comment>A linear sequence of at least two amino acid residues formed through the bonding of an amino with a carbonyl group which forms the basic structural and functional unit of a protein.</rdfs:comment>
         <rdfs:label>Peptide</rdfs:label>
     </owl:Class>
@@ -1882,6 +1884,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Protein</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein</oboInOwl:hasDbXref>
         <rdfs:comment>A class of molecules consisting of multiple peptide chains.</rdfs:comment>
         <rdfs:label>Protein</rdfs:label>
     </owl:Class>
@@ -2132,6 +2135,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C1936</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000673</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript</oboInOwl:hasDbXref>
         <rdfs:comment>A polynucleotide sequence containing only exonic regions and synthesized after removing introns and other non-coding regions from the original genomic sequence by splicing.</rdfs:comment>
         <rdfs:label>Transcript</rdfs:label>
     </owl:Class>
