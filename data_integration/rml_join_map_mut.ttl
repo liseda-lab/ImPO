@@ -1,0 +1,61 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: mappings
+# ----------------------------------------------------------------------------------------------------------------
+# PROTEIN
+<#ProteinMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Protein stable ID}"
+    ].
+
+# ----------------------------------------------------------------------------------------------------------------
+
+#-----------  FILE: CosmicMutantExport_nonredundant-immune-visible.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# AMINO ACID SUBSTITUTION
+<#AAsubstitition_cosmic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/CosmicMutantExport.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{HGVSP}"
+    ];
+    #occurs_in peptide or protein -- SEE HOW TO DO PEPTIDE
+    rr:predicateObjectMap [#OUT
+        rr:predicate impo:occurs_in;
+        rr:objectMap [ rr:parentTriplesMap <#ProteinMap_M>; 
+        rr:joinCondition [
+            rr:child "Gene name";
+            rr:parent "Gene name"; 
+        ];  
+        ];
+    ].

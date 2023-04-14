@@ -1,0 +1,248 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: closed_search_PSMs_HLA-I
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE
+<#Peptide_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_sequence - peptide
+    rr:predicateObjectMap [
+    rr:predicate impo:has_sequence;
+    rr:objectMap [ rml:reference "peptide" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# MASS SPECTROMETRY - name maybe mso_spectrum
+<#MassSpec_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mso_{spectrum}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:mass_spectrometry ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_instrument #OUT
+    #has_input sample
+    rr:predicateObjectMap [
+        rr:predicate impo:has_input;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{sample}";
+            rr:termType rr:IRI; 
+    ];
+    ];    
+    #has_output spectrum
+    rr:predicateObjectMap [
+        rr:predicate impo:has_output;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{spectrum}";
+            rr:termType rr:IRI;  
+    ];
+    ]; 
+    #part_of study
+    rr:predicateObjectMap [
+        rr:predicate impo:part_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride id}";
+            rr:termType rr:IRI;  
+    ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# SPECTRUM
+<#Spectrum_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{spectrum}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:spectrum ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_name - spectrum
+    rr:predicateObjectMap [
+    rr:predicate impo:has_name;
+    rr:objectMap [ rml:reference "spectrum" ]
+    ];
+    #output_of some mass_spectrometry
+    rr:predicateObjectMap [
+    rr:predicate impo:output_of;
+    rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mso_{spectrum}";
+        rr:termType rr:IRI;  
+    ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# SPECTRUM_PEPTIDE_IDENTIFICATION
+<#SpecPepID_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spec_pep_id_{spectrum}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:spectrum_peptide_identification ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_analysis_strategy - closed search
+    rr:predicateObjectMap [
+    rr:predicate impo:has_analysis_strategy;
+    rr:objectMap [ rml:constant "closed search" ]
+    ];
+    #has_score - ML score
+    rr:predicateObjectMap [
+    rr:predicate impo:has_score;
+    rr:objectMap [ rml:reference "ML score" ]
+    ];
+    #has_source - spectrum - QUESTION OBJ PROP
+    rr:predicateObjectMap [
+    rr:predicate impo:has_source;
+    rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mso_{spectrum}";
+          rr:termType rr:IRI;  
+        ];
+    ];
+    #has_target - peptide - QUESTION OBJ PROP
+    rr:predicateObjectMap [
+        rr:predicate impo:has_target;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}";
+        rr:termType rr:IRI; 
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# STUDY
+<#StudyMap_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride id}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:study ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - pride id
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "pride id" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# SAMPLE
+<#SampleMap_cs> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/closed_search_PSMs_HLA-I.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{sample}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:sample ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - sample
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "sample" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

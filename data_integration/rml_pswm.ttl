@@ -1,0 +1,146 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+
+#-----------  FILE: pswm_clustering_annotation + 0.05_LG_umap
+# ----------------------------------------------------------------------------------------------------------------
+# MOTIF
+<#Motif_pswm> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/pswm_clustering_annotation.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_{pswm}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:motif ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_component_1
+    rr:predicateObjectMap [
+    rr:predicate impo:has_component_1;
+    rr:objectMap [ rml:reference "c1" ]
+    ];
+    #has_component_2
+    rr:predicateObjectMap [
+    rr:predicate impo:has_component_2;
+    rr:objectMap [ rml:reference "c2" ]
+    ];
+    #has_cluster
+    rr:predicateObjectMap [
+    rr:predicate impo:has_cluster;
+    rr:objectMap [ rml:reference "pswm group" ]
+    ];
+    #has_part some peptide
+    rr:predicateObjectMap [
+        rr:predicate impo:has_part;
+        rr:objectMap [ rr:parentTriplesMap <#Peptide_pswm>;
+            rr:joinCondition [
+            rr:child "pswm";
+            rr:parent "pswm";
+      ];  
+    ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE
+<#Peptide_pswm> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/0.05_LG_umap_peptides_anno_FILLERCOL.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_sequence - peptide
+    rr:predicateObjectMap [
+    rr:predicate impo:has_sequence;
+    rr:objectMap [ rml:reference "peptide" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# MOTIF_HLA_ASSIGNMENT
+<#MotifHLAassignment_pswm> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/pswm_clustering_annotation.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Inferred allele}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:motif_hla_assignment ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_inference - Inferred allele
+    rr:predicateObjectMap [
+    rr:predicate impo:has_inference;
+    rr:objectMap [ rml:reference "Inferred allele" ]
+    ];
+    #has_source some motif
+    rr:predicateObjectMap [
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_{pswm}";
+              rr:termType rr:IRI;
+    ];
+    # #has_target some human_leukocyte_antigen
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:has_target;
+    #     rr:objectMap [ rr:parentTriplesMap <#HLAMap_st>;
+    #         rr:joinCondition [
+    #         rr:child "Sample Name";
+    #         rr:parent "Sample Name";
+    #   ];  
+    # ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

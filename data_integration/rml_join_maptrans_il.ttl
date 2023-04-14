@@ -1,0 +1,60 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: immunopeptides_library.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE TRANSCRIPT ASSIGNMENT
+<#PeptideTranscrAssign_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment_{peptide},{protein},{sample_name}"
+    ];
+    #target transcript
+    rr:predicateObjectMap [#OUT
+        rr:predicate impo:has_target;
+        rr:objectMap [ rr:parentTriplesMap <#TranscriptMap_M>;
+        rr:joinCondition [
+            rr:child "protein";
+            rr:parent "Protein stable ID"; 
+        ];  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+#-----------  FILE: mappings
+# ----------------------------------------------------------------------------------------------------------------
+# TRANSCRIPT
+<#TranscriptMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Transcript stable ID}"
+    ].

@@ -1,0 +1,137 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: mappings
+# ----------------------------------------------------------------------------------------------------------------
+# GENE - NAMED IND **AND** CLASS
+<#GeneMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Gene stable ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:gene; ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual; ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:Class; ]
+    ];
+    #has_id
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "Gene stable ID"; ]
+    ];
+    #has_name
+    rr:predicateObjectMap [
+    rr:predicate impo:has_name;
+    rr:objectMap [ rml:reference "Gene name"; ]
+    ];
+    #has_product
+    rr:predicateObjectMap [
+        rr:predicate impo:has_product;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Transcript stable ID}";
+            rr:termType rr:IRI;     
+     ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# TRANSCRIPT
+<#TranscriptMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Transcript stable ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:transcript; ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual; ]
+    ];
+    #has_id
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "Transcript stable ID"; ]
+    ];
+    #has_name
+    rr:predicateObjectMap [
+    rr:predicate impo:has_name;
+    rr:objectMap [ rml:reference "Transcript name"; ]
+    ];
+    #has_product
+    rr:predicateObjectMap [
+        rr:predicate impo:has_product;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Protein stable ID}";
+            rr:termType rr:IRI;
+    ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PROTEIN
+<#ProteinMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Protein stable ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:protein; ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual; ]
+    ];
+    #has_id
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "Protein stable ID"; ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

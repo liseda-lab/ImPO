@@ -1,0 +1,72 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: GenomicImmuneClusters.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# GIC
+<#GenomicHotspot_gic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/GenomicImmuneClusters.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    # genomic_immune_cluster - GIC + GIC ID
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot_{GIC ID}"
+    ].
+    #has_role in some cancer - HOW TO CONNECT TO SUPPL TABLE
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:has_role;
+    #     rr:objectMap [ rr:parentTriplesMap <#CancerMap_st>;
+    #     rr:joinCondition [
+    #         rr:child "Gene name"; #CHANGE
+    #         rr:parent "Gene name"; #CHANGE
+    #     ];  
+    #     ];
+    # ];
+    # ].
+# ----------------------------------------------------------------------------------------------------------------
+
+#-----------  FILE: CosmicMutantExport_nonredundant-immune-visible.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# GENOMIC MUTATION
+<#GenomicMutation_cosmic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/CosmicMutantExport.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{GENOMIC_MUTATION_ID}"
+    ];
+    #occurs_in genomic region
+    rr:predicateObjectMap [#OUT
+        rr:predicate impo:occurs_in;
+        rr:objectMap [ rr:parentTriplesMap <#GenomicHotspot_gic>;
+        rr:joinCondition [
+            rr:child "contig";
+            rr:parent "GIC ID"; 
+        ];  
+        ];
+    ].

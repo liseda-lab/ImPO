@@ -1,0 +1,250 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: .tsv - supplementary table
+# ----------------------------------------------------------------------------------------------------------------
+# STUDY
+<#StudyMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Study ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:study ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - Study ID
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "Study ID" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# SAMPLE
+<#SampleMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Sample Name}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:sample ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - Sample Name
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "Sample Name" ]
+    ];
+    #has_weight - Samples/tissue amount (grams)
+    rr:predicateObjectMap [
+    rr:predicate impo:has_weight;
+    rr:objectMap [ rml:reference "Samples/tissue amount (grams)" ]
+    ];
+    #has_sample_type - Sample Type
+    rr:predicateObjectMap [
+    rr:predicate impo:has_sample_type;
+    rr:objectMap [ rml:reference "Sample Type" ]
+    ];
+    #part_of some Tissue type
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:part_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Tissue type}";
+            rr:termType rr:IRI;  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PUBLICATION
+<#PublicationMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{References}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:publication ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_url - References
+    rr:predicateObjectMap [
+    rr:predicate impo:has_url;
+    rr:objectMap [ rml:reference "References" ]
+    ];
+    #realization_of some study
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:realization_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Study ID}";
+            rr:termType rr:IRI; 
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PATIENT - ? QUESTION HOW TO NAME
+#has_country - Place/country of patients
+#has_id - QUESTION HOW TO MAKE OR WHERE TO GET IT
+#has_treatment - Treatment
+#has_specimen some sample - QUESTION OBJ PROP
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# TISSUE - NAMED IND **AND** CLASS
+<#TissueMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Tissue type}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:tissue ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:Class ]
+    ].
+    #part_of exactly 1 patient - QUESTION OBJ PROP| HOW TO MODEL THE PATIENT
+    # rr:predicateObjectMap [#IN
+    # rr:predicate impo:part_of;
+    # rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{??}" ]#NOT SURE
+    # ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# HLA
+<#HLAMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_{HLA Class}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:Class ]
+    ];
+    #has_allele - Allele
+    rr:predicateObjectMap [
+    rr:predicate impo:has_allele;
+    rr:objectMap [ rml:reference "Allele" ]
+    ];
+    #feature_of some sample
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:feature_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Sample Name}";
+            rr:termType rr:IRI;  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# CANCER - NAMED IND **AND** CLASS
+<#CancerMap_st> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/Supplementary_table_1_tsvVersion.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Disease}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:Class ]
+    ];
+    #cancer_type_of some sample
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:cancer_type_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Sample Name}";
+            rr:termType rr:IRI;  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

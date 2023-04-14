@@ -1,0 +1,265 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: immunopeptides_library.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# GENOME
+<#Genome_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  # reference_genome - GRCH38-HG38-ENSEMBLv94 - always the same
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#GRCH38-HG38-ENSEMBLv94"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:reference_genome ]
+    ];
+    #has_annotation 
+    rr:predicateObjectMap [
+    rr:predicate impo:has_annotation;
+    rr:objectMap [ rr:constant "GRCH38-HG38-ENSEMBLv94" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE_GENOME_ASSIGNMENT
+<#PeptideGenomeAssignment> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    # peptide_genome_assignment - ? QUESTION HOW TO NAME - pep_gen_assign_+peptide?
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#pep_gen_assign_{peptide}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide_genome_assignment ]
+    ];
+    #has_chromosome_number - chr
+    rr:predicateObjectMap [
+    rr:predicate impo:has_chromosome_number;
+    rr:objectMap [ rml:reference "chr" ]
+    ];
+    #has_end_position - end
+    rr:predicateObjectMap [
+    rr:predicate impo:has_end_position;
+    rr:objectMap [ rml:reference "end" ]
+    ];
+    #has_start_position - start
+    rr:predicateObjectMap [
+    rr:predicate impo:has_start_position;
+    rr:objectMap [ rml:reference "start" ]
+    ];
+    #has_source some peptide
+        rr:predicateObjectMap [#IN
+            rr:predicate impo:has_source;
+            rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}";
+            rr:termType rr:IRI;
+        ];
+        ];
+    #has_target some reference genome (always the same - GRCH38-HG38-ENSEMBLv94)
+        rr:predicateObjectMap [#IN
+        rr:predicate impo:has_target;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#GRCH38-HG38-ENSEMBLv94";
+            rr:termType rr:IRI;
+    ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE
+<#PeptideMap_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_sequence - peptide
+    rr:predicateObjectMap [
+    rr:predicate impo:has_inference;
+    rr:objectMap [ rml:reference "peptide" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE PROTEIN ASSIGNMENT
+<#PeptideProtAssign_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_protein_assignment_{peptide},{protein},{sample_name}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide_protein_assignment ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #source peptide
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}";
+            rr:termType rr:IRI;  
+        ];
+    # ];
+    # #target protein
+      rr:predicateObjectMap [#OUT
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{protein}";
+            rr:termType rr:IRI;  
+        ];
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:has_target;
+    #     rr:objectMap [ rr:parentTriplesMap <#ProteinMap_M>;
+    #     rr:joinCondition [
+    #         rr:child "protein";
+    #         rr:parent "Protein stable ID"; 
+    #     ];  
+    #     ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE TRANSCRIPT ASSIGNMENT
+<#PeptideTranscrAssign_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment_{peptide},{protein},{sample_name}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:peptide_transcript_assignment ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_tag - peptide type
+    rr:predicateObjectMap [
+    rr:predicate impo:has_tag;
+    rr:objectMap [ rml:reference "peptide type" ]
+    ];
+    #source peptide
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{peptide}";
+            rr:termType rr:IRI; 
+        ];
+    # ];
+    # #target transcript
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:has_target;
+    #     rr:objectMap [ rr:parentTriplesMap <#TranscriptMap_M>;
+    #     rr:joinCondition [
+    #         rr:child "protein";
+    #         rr:parent "Protein stable ID"; 
+    #     ];  
+    #     ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# STUDY - idk if needed
+<#StudyMap_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{study_id}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:study ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - study_id
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "study_id" ]
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

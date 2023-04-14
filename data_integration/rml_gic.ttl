@@ -1,0 +1,109 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: GenomicImmuneClusters.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# GIC
+<#GenomicHotspot_gic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/GenomicImmuneClusters.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    # genomic_immune_cluster - GIC + GIC ID
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot_{GIC ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:genomic_hotspot ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_id - GIC ID
+    rr:predicateObjectMap [
+    rr:predicate impo:has_id;
+    rr:objectMap [ rml:reference "GIC ID" ]
+    ];
+    #has_chromosome_number - GIC chr
+    rr:predicateObjectMap [
+    rr:predicate impo:has_chromosome_number;
+    rr:objectMap [ rml:reference "GIC chr" ]
+    ];
+    #has_start_position - GIC start
+    rr:predicateObjectMap [
+    rr:predicate impo:has_start_position;
+    rr:objectMap [ rml:reference "GIC start" ]
+    ];
+    #has_end_position - GIC end
+    rr:predicateObjectMap [
+    rr:predicate impo:has_end_position;
+    rr:objectMap [ rml:reference "GIC end" ]
+    ];
+    #has_strand - GIC strand
+    rr:predicateObjectMap [
+    rr:predicate impo:has_strand;
+    rr:objectMap [ rml:reference "GIC strand" ]
+    ];
+    #has_expression - GIC expression (RPM)
+    rr:predicateObjectMap [
+    rr:predicate impo:has_expression;
+    rr:objectMap [ rml:reference "GIC expression (RPM)" ]
+    ];
+    #has_overlap_score - GIC overlap score
+    rr:predicateObjectMap [
+    rr:predicate impo:has_overlap_score;
+    rr:objectMap [ rml:reference "GIC overlap score" ]
+    ];
+    #has_gene_mutational_ratio - GIC Max mutational gene density
+    rr:predicateObjectMap [
+    rr:predicate impo:has_gene_mutational_ratio;
+    rr:objectMap [ rml:reference "GIC Max mutational gene density" ]
+    ];
+    #has_population_coverage - GIC population coverage
+    rr:predicateObjectMap [
+    rr:predicate impo:has_population_coverage;
+    rr:objectMap [ rml:reference "GIC population coverage" ]
+    ];
+    #has_imune_score - GIC score
+    rr:predicateObjectMap [
+    rr:predicate impo:has_imune_score;
+    rr:objectMap [ rml:reference "GIC score" ]
+    ];
+    #GENE NAME - HAS PART GENE NAME
+    rr:predicateObjectMap [#OUT
+        rr:predicate impo:has_part;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{GIC gene name}";
+        rr:termType rr:IRI;  
+        ];
+    ].
+    #has_role in some cancer - HOW TO CONNECT TO SUPPL TABLE
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:has_role;
+    #     rr:objectMap [ rr:parentTriplesMap <#CancerMap_st>;
+    #     rr:joinCondition [
+    #         rr:child "Gene name"; #CHANGE
+    #         rr:parent "Gene name"; #CHANGE
+    #     ];  
+    #     ];
+    # ];
+    # ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

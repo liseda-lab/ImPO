@@ -1,0 +1,124 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: CosmicMutantExport_nonredundant-immune-visible.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# GENOMIC MUTATION
+<#GenomicMutation_cosmic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/CosmicMutantExport.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{GENOMIC_MUTATION_ID}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:genomic_mutation ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_cosmic_id - GENOMIC_MUTATION_ID
+    rr:predicateObjectMap [
+    rr:predicate impo:has_cosmic_id;
+    rr:objectMap [ rml:reference "GENOMIC_MUTATION_ID" ]
+    ];
+    #has_chromosome_number - chr
+    rr:predicateObjectMap [
+    rr:predicate impo:has_chromosome_number;
+    rr:objectMap [ rml:reference "chr" ]
+    ];
+    #has_start_position - start
+    rr:predicateObjectMap [
+    rr:predicate impo:has_start_position;
+    rr:objectMap [ rml:reference "start" ]
+    ];
+    #has_end_position - end
+    rr:predicateObjectMap [
+    rr:predicate impo:has_end_position;
+    rr:objectMap [ rml:reference "end" ]
+    ];
+    #has_strand - Mutation strand
+    rr:predicateObjectMap [
+    rr:predicate impo:has_strand;
+    rr:objectMap [ rml:reference "Mutation strand" ]
+    # ];
+    # #occurs_in genomic region
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:occurs_in;
+    #     rr:objectMap [ rr:parentTriplesMap <#GenomicHotspot_gic>;
+    #     rr:joinCondition [
+    #         rr:child "contig";
+    #         rr:parent "GIC ID"; 
+    #     ];  
+    #     ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# AMINO ACID SUBSTITUTION
+<#AAsubstitition_cosmic> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/CosmicMutantExport.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{HGVSP}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:amino_acid_substitution ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_hgvsp - HGVSP
+    rr:predicateObjectMap [
+    rr:predicate impo:has_hgvsp;
+    rr:objectMap [ rml:reference "HGVSP" ]
+    ];
+    #has_source - GENOMIC MUTATION
+    rr:predicateObjectMap [
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{GENOMIC_MUTATION_ID}";
+        rr:termType rr:IRI;  
+        ];
+    # ];
+    # #occurs_in peptide or protein -- SEE HOW TO DO PEPTIDE
+    # rr:predicateObjectMap [#OUT
+    #     rr:predicate impo:occurs_in;
+    #     rr:objectMap [ rr:parentTriplesMap <#ProteinMap_M>; 
+    #     rr:joinCondition [
+    #         rr:child "Gene name";
+    #         rr:parent "Gene name"; 
+    #     ];  
+    #     ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

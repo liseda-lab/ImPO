@@ -1,0 +1,60 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: immunopeptides_library.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# PEPTIDE PROTEIN ASSIGNMENT
+<#PeptideProtAssign_IL> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/immunopeptides_library.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+    rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_protein_assignment_{peptide},{protein},{sample_name}"
+    ];
+    #target protein
+    rr:predicateObjectMap [#OUT
+        rr:predicate impo:has_target;
+        rr:objectMap [ rr:parentTriplesMap <#ProteinMap_M>;
+        rr:joinCondition [
+            rr:child "protein";
+            rr:parent "Protein stable ID"; 
+        ];  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+#-----------  FILE: mappings
+# ----------------------------------------------------------------------------------------------------------------
+# PROTEIN
+<#ProteinMap_M> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/mappings.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Protein stable ID}"
+    ].
