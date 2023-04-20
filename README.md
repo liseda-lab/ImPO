@@ -8,3 +8,5 @@ The ImPO was initiated 2021 under the auspices of the [KATY Consortium](https://
 ImPO RDF files are available in our GitHub repository as follows:
 - Core ontology: [ImPO.owl](https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl).
 - Instance data used for validation through competency questions: [ImPOinds.rdf](https://github.com/liseda-lab/ImPO/blob/main/ImPOinds.rdf).
+- Competency questions used to evaluate ImPO completeness: [ImPO_SPARQLcqs.txt](https://github.com/liseda-lab/ImPO/blob/main/ImPO_SPARQLcqs.txt)
+- A folder with the rml files used for data integration into ImPO: [data_integration](https://github.com/liseda-lab/ImPO/tree/main/data_integration) 
