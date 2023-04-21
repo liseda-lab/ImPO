@@ -5,7 +5,7 @@ ImPO is an ontology designed with the purpose of encapsulating and systematizing
 
 ImPO was initiated in 2021 under the auspices of the [KATY Consortium](https://katy-project.eu/), supported by the EU programme Horizon 2020/H2020-SCI-FA-DTS-2020-1.
 
-ImPO RDF files are available in our GitHub repository as follows:
+ImPO files are available in our GitHub repository as follows:
 - Core ontology: [ImPO.owl](https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl).
 - Instance data used for validation through competency questions: [ImPOinds.rdf](https://github.com/liseda-lab/ImPO/blob/main/ImPOinds.rdf).
 - Competency questions used to evaluate ImPO completeness: [ImPO_SPARQLcqs.txt](https://github.com/liseda-lab/ImPO/blob/main/ImPO_SPARQLcqs.txt).
