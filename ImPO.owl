@@ -2,18 +2,18 @@
 <rdf:RDF xmlns="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xml:base="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:impo="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:impo="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl">
         <dc:creator>Ashwin Adrian Kallor, Catia Pesquita, Daniel Faria, Georges Bedran, Javier A. Alfaro, Patrícia Eugénio</dc:creator>
         <dc:title>ImPO: The ImmunoPeptidomics Ontology</dc:title>
-        <dc:description>ImPO standardizes the terminology and semantics of immunopeptidomics experimental processes and bioinformatics analysis for facilitated data integration and analysis.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
@@ -54,6 +54,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -69,7 +75,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#association_of">
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_association"/>
-        <rdfs:label>Associated Of</rdfs:label>
+        <rdfs:label>Association Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -119,6 +125,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+        <skos:definition>Property that helps in associating a cancer type to a given sample.</skos:definition>
         <rdfs:label>Has Cancer Type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -138,6 +145,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_feature">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+        <skos:definition>Property used to describe a distinguishing characteristic of a biological entity, whether at the organism, cellular, or molecular level.</skos:definition>
         <rdfs:label>Has Feature</rdfs:label>
     </owl:ObjectProperty>
     
@@ -149,6 +157,7 @@
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#input_of"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <skos:definition>Property that describes a relationship in which one entity receives or accepts data, information, or other inputs from another entity.</skos:definition>
         <rdfs:label>Has Input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -169,6 +178,7 @@
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#output_of"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#result"/>
+        <skos:definition>Property that describes a relationship in which one entity produces or generates data, information, or other outputs that are sent to another entity.</skos:definition>
         <rdfs:label>Has Output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -199,6 +209,7 @@
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#realization_of"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#study"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
+        <skos:definition>Property that describes a relationship in which one entity embodies or implements a design or specification, while the other entity represents the design or specification itself.</skos:definition>
         <rdfs:label>Has Realization</rdfs:label>
     </owl:ObjectProperty>
     
@@ -218,6 +229,7 @@
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#role_of"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#cancer"/>
+        <skos:definition>Property that refers to the function or purpose of a particular entity within an organism or system.</skos:definition>
         <rdfs:label>Has Role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -230,6 +242,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample_type"/>
+        <skos:definition>Property that helps in associating a sample to a specific type.</skos:definition>
         <rdfs:label>Has Sample Type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -250,6 +263,7 @@
         <owl:inverseOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#specimen_of"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
+        <skos:definition>Property that describes a relationship in which a patient, repository, or database holds or contains one or more biological specimens or samples.</skos:definition>
         <rdfs:label>Has Specimen</rdfs:label>
     </owl:ObjectProperty>
     
@@ -286,6 +300,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte"/>
+        <skos:definition>Property that describes a relationship in which one entity recognizes, classifies, or labels another entity based on its features or characteristics.</skos:definition>
         <rdfs:label>Identifies</rdfs:label>
     </owl:ObjectProperty>
     
@@ -434,6 +449,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_aa_change">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Indicates a change in the amino acid sequence of a protein or peptide.</skos:definition>
         <rdfs:label>Has Amino Acid Change</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -444,6 +460,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_accession">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#protein"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to an accession number or identifier assigned to a sequence or other biological entity.</skos:definition>
         <rdfs:label>Has Accession</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -454,6 +471,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_allele">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a specific version or variant of a gene or other genetic element.</skos:definition>
         <rdfs:label>Has Allele</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -464,6 +482,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_analysis_strategy">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum_peptide_identification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Describes the method or approach used to analyze the data.</skos:definition>
         <rdfs:label>Has Analysis Strategy</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -481,6 +500,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to additional descriptive information or metadata about the entity.</skos:definition>
         <rdfs:label>Has Annotation</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -500,6 +520,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the number of the chromosome on which the entity is located.</skos:definition>
         <rdfs:label>Has Chromosome Number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -510,6 +531,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_class">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <skos:definition>Indicates the class or type of the entity.</skos:definition>
         <rdfs:label>Has Class</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -520,6 +542,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cluster">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <skos:definition>Refers to a group or cluster of related data points.</skos:definition>
         <rdfs:label>Has Cluster</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -539,6 +562,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>A motif component, or feature.</skos:definition>
         <rdfs:label>Has Component 1</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -550,6 +574,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>A motif component, or feature.</skos:definition>
         <rdfs:label>Has Component 2</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -560,6 +585,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_contig">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <skos:definition>Refers to a contiguous sequence in a genomic mutation.</skos:definition>
         <rdfs:label>Has Contig</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -570,6 +596,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_cosmic_id">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to an identifier assigned by the Catalogue of Somatic Mutations in Cancer (COSMIC).</skos:definition>
         <rdfs:label>Has Cosmic ID</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -580,6 +607,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_country">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the country in which the sample from the patient was collected or originated.</skos:definition>
         <rdfs:label>Has Country</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -590,6 +618,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_doi">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a digital object identifier assigned to a publication or dataset.</skos:definition>
         <rdfs:label>Has DOI</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -626,6 +655,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_file_location">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spectrum"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the location or path of a file containing the data.</skos:definition>
         <rdfs:label>Has File Location</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -636,6 +666,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_gene_mutational_ratio">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to the ratio of mutated to non-mutated copies of a gene in a population.</skos:definition>
         <rdfs:label>Has Gene Mutational Ratio</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -646,7 +677,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_hgvsp">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#amino_acid_substitution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>series of variants on one chromosome</rdfs:comment>
+        <skos:definition>Refers to the Human Genome Variation Society (HGVS) protein nomenclature. Series of variants on one chromosome.</skos:definition>
         <rdfs:label>Has HGVSP</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -665,6 +696,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_immune_score">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to a score or metric indicating the degree of immune system involvement in a disease or condition.</skos:definition>
         <rdfs:label>Has Immune Score</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -675,6 +707,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_inference">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_hla_assignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Describes the type of inference or reasoning used to derive the data.</skos:definition>
         <rdfs:label>Has Inference</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -685,6 +718,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_instrument">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the instrument or technology used to generate the data.</skos:definition>
         <rdfs:label>Has Instrument</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -704,6 +738,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_overlap_score">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to a score or metric indicating the degree of overlap or similarity between genomic hotspots.</skos:definition>
         <rdfs:label>Has Overlap Score</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -714,6 +749,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_parameter_file">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#assay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a file containing parameters or settings used to generate or analyze the data.</skos:definition>
         <rdfs:label>Has Parameter File</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -724,6 +760,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_population_coverage">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#genomic_hotspot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to the percentage of a population that is covered by the genomic hotspot data.</skos:definition>
         <rdfs:label>Has Population Coverage</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -734,6 +771,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_position">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#associated_with_ptm"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <skos:definition>Refers to the specific location or coordinates of the analyte on a genome or other reference sequence.</skos:definition>
         <rdfs:label>Has Position</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -751,6 +789,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to a score or metric associated with an entity.</skos:definition>
         <rdfs:label>Has Score</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -761,6 +800,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_sequence">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a sequence in a biological entity.</skos:definition>
         <rdfs:label>Has Sequence</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -795,6 +835,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the directionality or orientation of the analyte on a genome or other reference sequence.</skos:definition>
         <rdfs:label>Has DNA Strand</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -805,6 +846,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_tag">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#peptide_transcript_assignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a label or tag assigned to the entity.</skos:definition>
         <rdfs:label>Has Tag</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -815,6 +857,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_treatment">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a treatment or intervention applied to the sample from which the data was derived.</skos:definition>
         <rdfs:label>Has Treatment</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -833,6 +876,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to the entity type specification.</skos:definition>
         <rdfs:label>Has Type</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -843,6 +887,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_url">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition>Refers to a URL or web address associated with the entity.</skos:definition>
         <rdfs:label>Has URL</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -863,6 +908,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#has_weight">
         <rdfs:domain rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <skos:definition>Refers to a weight of a sample.</skos:definition>
         <rdfs:label>Has Weight</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -898,7 +944,7 @@
         <oboInOwl:hasDbXref>http://www.orpha.net/ORDO/Orphanet_519</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00001224</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00014415</oboInOwl:hasDbXref>
-        <rdfs:comment>A subtype of leukemia which progresses rapidly (hence “acute”) and which affects only the blood cells of myeloid origin (for example, monocytes).</rdfs:comment>
+        <skos:definition>A subtype of leukemia which progresses rapidly (hence “acute”) and which affects only the blood cells of myeloid origin (for example, monocytes).</skos:definition>
         <rdfs:label>Acute Myeloid Leukemia</rdfs:label>
     </owl:Class>
     
@@ -934,7 +980,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0001606</oboInOwl:hasDbXref>
-        <rdfs:comment>A type of mutation in which the nucleotide triplet sequence, coding for a particular amino acid, causes one amino acid to be replaced by another.</rdfs:comment>
+        <skos:definition>A type of mutation in which the nucleotide triplet sequence, coding for a particular amino acid, causes one amino acid to be replaced by another.</skos:definition>
         <rdfs:label>Amino Acid Substitution</rdfs:label>
     </owl:Class>
     
@@ -943,7 +989,7 @@
     <!-- https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte -->
 
     <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#analyte">
-        <rdfs:comment>The molecular entity being analyzed, whether gene, transcript or protein.</rdfs:comment>
+        <skos:definition>The molecular entity being analyzed, whether gene, transcript or protein.</skos:definition>
         <rdfs:label>Analyte</rdfs:label>
     </owl:Class>
     
@@ -973,7 +1019,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C16341</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C60819</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OBI_0000070</oboInOwl:hasDbXref>
-        <rdfs:comment>An investigative experiment used to determine the presence (qualitative) or amount (quantitative) of a particular analyte (ex protein).</rdfs:comment>
+        <skos:definition>An investigative experiment used to determine the presence (qualitative) or amount (quantitative) of a particular analyte (ex protein).</skos:definition>
         <rdfs:label>Assay</rdfs:label>
     </owl:Class>
     
@@ -1002,7 +1048,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C25426</oboInOwl:hasDbXref>
-        <rdfs:comment>Assigning a particular structural or functional feature or characteristic to an analyte.</rdfs:comment>
+        <skos:definition>Assigning a particular structural or functional feature or characteristic to an analyte.</skos:definition>
         <rdfs:label>Assignment</rdfs:label>
     </owl:Class>
     
@@ -1029,7 +1075,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>The change in mass of the peptide caused due to the modification of a certain residue through the binding of a functional group. (Ex Methionine Acetylation, a PTM, causes a mass shift of 59 to the peptide).</rdfs:comment>
+        <skos:definition>The change in mass of the peptide caused due to the modification of a certain residue through the binding of a functional group. (Ex Methionine Acetylation, a PTM, causes a mass shift of 59 to the peptide).</skos:definition>
         <rdfs:label>Mass Shift Association with PTM</rdfs:label>
     </owl:Class>
     
@@ -1049,7 +1095,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C3568</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0003833</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00010500</oboInOwl:hasDbXref>
-        <rdfs:comment>A type of cancer affecting the tissues in a particular lobe of the brain.</rdfs:comment>
+        <skos:definition>A type of cancer affecting the tissues in a particular lobe of the brain.</skos:definition>
         <rdfs:label>Brain Cancer</rdfs:label>
     </owl:Class>
     
@@ -1066,7 +1112,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/HP_0002664</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MONDO_0004992</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C9305</oboInOwl:hasDbXref>
-        <rdfs:comment>A group of diseases that are characterized by uncontrolled cellular growth and, in some cases, metastasis or spread to organs away from the site of origin that result from intracellular mutational events.</rdfs:comment>
+        <skos:definition>A group of diseases that are characterized by uncontrolled cellular growth and, in some cases, metastasis or spread to organs away from the site of origin that result from intracellular mutational events.</skos:definition>
         <rdfs:label>Cancer</rdfs:label>
     </owl:Class>
     
@@ -1085,7 +1131,7 @@
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0000349</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.orpha.net/ORDO/Orphanet_319276</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00008232</oboInOwl:hasDbXref>
-        <rdfs:comment>A subtype of kidney cancer affecting the renal cortex/renal tubular epithelial cells and is named because of its “clear” appearance in tissue sections viewed under the microscope.</rdfs:comment>
+        <skos:definition>A subtype of kidney cancer affecting the renal cortex/renal tubular epithelial cells and is named because of its “clear” appearance in tissue sections viewed under the microscope.</skos:definition>
         <rdfs:label>Clear Cell Renal Cell Carcinoma (ccRCC)</rdfs:label>
     </owl:Class>
     
@@ -1109,7 +1155,7 @@
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0005842</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_1001950</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00005638</oboInOwl:hasDbXref>
-        <rdfs:comment>A type of cancer that originates in the tissues of the colon.</rdfs:comment>
+        <skos:definition>A type of cancer that originates in the tissues of the colon.</skos:definition>
         <rdfs:label>Colon Cancer</rdfs:label>
     </owl:Class>
     
@@ -1121,7 +1167,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#tissue"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0012652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0013067</oboInOwl:hasDbXref>
-        <rdfs:comment>Tissue derived from the colorectal region of the body comprising the colon and the rectum and may be either freshly harvested or frozen.</rdfs:comment>
+        <skos:definition>Tissue derived from the colorectal region of the body comprising the colon and the rectum and may be either freshly harvested or frozen.</skos:definition>
         <rdfs:label>Colorectal</rdfs:label>
     </owl:Class>
     
@@ -1154,7 +1200,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C80488</oboInOwl:hasDbXref>
-        <rdfs:comment>An (often scaled and normalized) estimate of the number of copies of the analyte in a sample, with or without treatment.</rdfs:comment>
+        <skos:definition>An (often scaled and normalized) estimate of the number of copies of the analyte in a sample, with or without treatment.</skos:definition>
         <rdfs:label>Expression</rdfs:label>
     </owl:Class>
     
@@ -1200,9 +1246,9 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OGG_0000000002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000704</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.drugtargetontology.org/dto/DTO_00200000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035818</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene</oboInOwl:hasDbXref>
-        <rdfs:comment>A polynucleotide sequence consisting of both coding and non-coding regions transcribed and translated to produce a polypeptide (protein).</rdfs:comment>
+        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035818</oboInOwl:hasDbXref>
+        <skos:definition>A polynucleotide sequence consisting of both coding and non-coding regions transcribed and translated to produce a polypeptide (protein).</skos:definition>
         <rdfs:label>Gene</rdfs:label>
     </owl:Class>
     
@@ -1262,7 +1308,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A proposed region on the human genome surveyed by the immune system at a high frequency.</rdfs:comment>
+        <skos:definition>A proposed region on the human genome surveyed by the immune system at a high frequency.</skos:definition>
         <rdfs:label>Genomic Hotspot</rdfs:label>
     </owl:Class>
     
@@ -1309,7 +1355,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035855</oboInOwl:hasDbXref>
-        <rdfs:comment>A mutation occurring at the level of the genome, i.e., pre-transcribed sequences.</rdfs:comment>
+        <skos:definition>A mutation occurring at the level of the genome, i.e., pre-transcribed sequences.</skos:definition>
         <rdfs:label>Genomic Mutation</rdfs:label>
     </owl:Class>
     
@@ -1343,7 +1389,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>The nucleotide sequence occurring between the start and end coordinates of the gene on the genome.</rdfs:comment>
+        <skos:definition>The nucleotide sequence occurring between the start and end coordinates of the gene on the genome.</skos:definition>
         <rdfs:label>Genomic Region</rdfs:label>
     </owl:Class>
     
@@ -1367,7 +1413,7 @@
         <oboInOwl:hasDbXref>http://www.orpha.net/ORDO/Orphanet_360</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00010511</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00038013</oboInOwl:hasDbXref>
-        <rdfs:comment>An aggressive type of glioma associated with the astrocytes and known to occur mostly in the cerebral hemispheres of the brain.</rdfs:comment>
+        <skos:definition>An aggressive type of glioma associated with the astrocytes and known to occur mostly in the cerebral hemispheres of the brain.</skos:definition>
         <rdfs:label>Glioblastoma</rdfs:label>
     </owl:Class>
     
@@ -1390,7 +1436,7 @@
         <oboInOwl:hasDbXref>http://www.orpha.net/ORDO/Orphanet_182067</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00014421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00085552</oboInOwl:hasDbXref>
-        <rdfs:comment>A type of brain cancer affecting the brain&apos;s glial (supporting) cells.</rdfs:comment>
+        <skos:definition>A type of brain cancer affecting the brain&apos;s glial (supporting) cells.</skos:definition>
         <rdfs:label>Glioma</rdfs:label>
     </owl:Class>
     
@@ -1414,7 +1460,7 @@
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0000182</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.orpha.net/ORDO/Orphanet_88673</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00005815</oboInOwl:hasDbXref>
-        <rdfs:comment>A primary adenocarcinoma of the liver and a subtype of liver cancer whose incidence is strongly associated with other underlying liver diseases such as cirrhosis, hepatitis and non-alcoholic fatty liver disease (NAFLD).</rdfs:comment>
+        <skos:definition>A primary adenocarcinoma of the liver and a subtype of liver cancer whose incidence is strongly associated with other underlying liver diseases such as cirrhosis, hepatitis and non-alcoholic fatty liver disease (NAFLD).</skos:definition>
         <rdfs:label>Hepatocellular Carcinoma</rdfs:label>
     </owl:Class>
     
@@ -1441,7 +1487,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C20705</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C20706</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00022917</oboInOwl:hasDbXref>
-        <rdfs:comment>A group of proteins in the immunoglobulin family that are involved in the presentation of peptide antigens and are located on the surface of nucleated cells.</rdfs:comment>
+        <skos:definition>A group of proteins in the immunoglobulin family that are involved in the presentation of peptide antigens and are located on the surface of nucleated cells.</skos:definition>
         <rdfs:label>Human Leukocyte Antigen (HLA)</rdfs:label>
     </owl:Class>
     
@@ -1451,7 +1497,7 @@
 
     <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_1">
         <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
-        <rdfs:comment>A member of the HLA family presenting antigens of either self or viral origin, ranging between 8-15 amino acids in length.</rdfs:comment>
+        <skos:definition>A member of the HLA family presenting antigens of either self or viral origin, ranging between 8-15 amino acids in length.</skos:definition>
         <rdfs:label>Human Leukocyte Antigen 1 (HLA 1)</rdfs:label>
     </owl:Class>
     
@@ -1461,7 +1507,7 @@
 
     <owl:Class rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen_2">
         <rdfs:subClassOf rdf:resource="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#human_leukocyte_antigen"/>
-        <rdfs:comment>A member of the HLA family presenting antigens of external origin, such as bacterial, ranging between 8-20 amino acids in length.</rdfs:comment>
+        <skos:definition>A member of the HLA family presenting antigens of external origin, such as bacterial, ranging between 8-20 amino acids in length.</skos:definition>
         <rdfs:label>Human Leukocyte Antigen 2 (HLA 2)</rdfs:label>
     </owl:Class>
     
@@ -1479,7 +1525,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MONDO_0005206</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C9384</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0002890</oboInOwl:hasDbXref>
-        <rdfs:comment>A group of cancers that affect multiple regions of the kidney and are classified based on tissue histology and gene mutations.</rdfs:comment>
+        <skos:definition>A group of cancers that affect multiple regions of the kidney and are classified based on tissue histology and gene mutations.</skos:definition>
         <rdfs:label>Kidney Cancer</rdfs:label>
     </owl:Class>
     
@@ -1501,7 +1547,7 @@
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0000565</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Leukemia</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00085228</oboInOwl:hasDbXref>
-        <rdfs:comment>A type of cancer that affects the tissues involved in the formation of blood, such as the bone marrow.</rdfs:comment>
+        <skos:definition>A type of cancer that affects the tissues involved in the formation of blood, such as the bone marrow.</skos:definition>
         <rdfs:label>Leukemia</rdfs:label>
     </owl:Class>
     
@@ -1522,7 +1568,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C7711</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C7927</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0000182</oboInOwl:hasDbXref>
-        <rdfs:comment>A cancer that originates in and affects the liver&apos;s hepatocytes and may be primary (restricted to the liver) or secondary (originating in the liver but metastasising to other organs, also known as liver metastasis).</rdfs:comment>
+        <skos:definition>A cancer that originates in and affects the liver&apos;s hepatocytes and may be primary (restricted to the liver) or secondary (originating in the liver but metastasising to other organs, also known as liver metastasis).</skos:definition>
         <rdfs:label>Liver Cancer</rdfs:label>
     </owl:Class>
     
@@ -1544,7 +1590,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>The change in the molecular weight of the peptide due to a post-translational modification after comparison with its original, unmodified molecular weight.</rdfs:comment>
+        <skos:definition>The change in the molecular weight of the peptide due to a post-translational modification after comparison with its original, unmodified molecular weight.</skos:definition>
         <rdfs:label>Mass Shift</rdfs:label>
     </owl:Class>
     
@@ -1575,7 +1621,7 @@
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000486889</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C17156</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0002766</oboInOwl:hasDbXref>
-        <rdfs:comment>An analytical technique that measures the presence and the amount of a particular analyte in a sample by measuring the intensity/abundance of charged ionic species formed during the analyte fragmentation within the sample.</rdfs:comment>
+        <skos:definition>An analytical technique that measures the presence and the amount of a particular analyte in a sample by measuring the intensity/abundance of charged ionic species formed during the analyte fragmentation within the sample.</skos:definition>
         <rdfs:label>Mass Spectrometry</rdfs:label>
     </owl:Class>
     
@@ -1612,7 +1658,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C13379</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0100017</oboInOwl:hasDbXref>
-        <rdfs:comment>A specific peptide sequence of a certain length determining the binding specificity of the peptide to a particular HLA molecule.</rdfs:comment>
+        <skos:definition>A specific peptide sequence of a certain length determining the binding specificity of the peptide to a particular HLA molecule.</skos:definition>
         <rdfs:label>Motif</rdfs:label>
     </owl:Class>
     
@@ -1640,7 +1686,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Assignment of a binding motif to a particular HLA molecule.</rdfs:comment>
+        <skos:definition>Assignment of a binding motif to a particular HLA molecule.</skos:definition>
         <rdfs:label>Motif-HLA Assignment</rdfs:label>
     </owl:Class>
     
@@ -1654,7 +1700,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C45576</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000109</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035855</oboInOwl:hasDbXref>
-        <rdfs:comment>A change in the nucleotide sequence through various mechanisms such as substitutions, deletions etc., which may or may not result in genotypic and phenotypic differences in the affected organism.</rdfs:comment>
+        <skos:definition>A change in the nucleotide sequence through various mechanisms such as substitutions, deletions etc., which may or may not result in genotypic and phenotypic differences in the affected organism.</skos:definition>
         <rdfs:label>Mutation</rdfs:label>
     </owl:Class>
     
@@ -1702,9 +1748,9 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/CHEBI_16670</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C735</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00021328</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#peptide</oboInOwl:hasDbXref>
-        <rdfs:comment>A linear sequence of at least two amino acid residues formed through the bonding of an amino with a carbonyl group which forms the basic structural and functional unit of a protein.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00021328</oboInOwl:hasDbXref>
+        <skos:definition>A linear sequence of at least two amino acid residues formed through the bonding of an amino with a carbonyl group which forms the basic structural and functional unit of a protein.</skos:definition>
         <rdfs:label>Peptide</rdfs:label>
     </owl:Class>
     
@@ -1744,7 +1790,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Assignment of the genomic location of a peptide, i.e. its specific genomic coordinates.</rdfs:comment>
+        <skos:definition>Assignment of the genomic location of a peptide, i.e. its specific genomic coordinates.</skos:definition>
         <rdfs:label>Peptide-Genome Assignment</rdfs:label>
     </owl:Class>
     
@@ -1778,7 +1824,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Assignment of a peptide fragment to its protein of origin.</rdfs:comment>
+        <skos:definition>Assignment of a peptide fragment to its protein of origin.</skos:definition>
         <rdfs:label>Peptide-Protein Assignment</rdfs:label>
     </owl:Class>
     
@@ -1806,7 +1852,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Assignment of a peptide to its transcript of origin.</rdfs:comment>
+        <skos:definition>Assignment of a peptide to its transcript of origin.</skos:definition>
         <rdfs:label>Peptide-Transcript Assignment</rdfs:label>
     </owl:Class>
     
@@ -1819,7 +1865,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/CLO_0037274</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C12954</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C138972</oboInOwl:hasDbXref>
-        <rdfs:comment>Blood cells isolated from the peripheral blood and have a rounded nucleus.</rdfs:comment>
+        <skos:definition>Blood cells isolated from the peripheral blood and have a rounded nucleus.</skos:definition>
         <rdfs:label>Peripheral Blood Mononuclear Cells (PBMC)</rdfs:label>
     </owl:Class>
     
@@ -1850,7 +1896,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GO_0043687</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C17019</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0001089</oboInOwl:hasDbXref>
-        <rdfs:comment>One or several modifications of an amino acid residue within a polypeptide chain through the binding of a functional group (such as Acetyl) which occurs only after the protein has been translated.</rdfs:comment>
+        <skos:definition>One or several modifications of an amino acid residue within a polypeptide chain through the binding of a functional group (such as Acetyl) which occurs only after the protein has been translated.</skos:definition>
         <rdfs:label>Post-Translational Modification (PTM)</rdfs:label>
     </owl:Class>
     
@@ -1883,9 +1929,9 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PR_000000001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Protein</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035835</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein</oboInOwl:hasDbXref>
-        <rdfs:comment>A class of molecules consisting of multiple peptide chains.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00035835</oboInOwl:hasDbXref>
+        <skos:definition>A class of molecules consisting of multiple peptide chains.</skos:definition>
         <rdfs:label>Protein</rdfs:label>
     </owl:Class>
     
@@ -1910,7 +1956,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C19026</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C48471</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Publication</oboInOwl:hasDbXref>
-        <rdfs:comment>A submitted and accepted version of a research article detailing experimental and/or computational analysis related to a novel scientific question.</rdfs:comment>
+        <skos:definition>A submitted and accepted version of a research article detailing experimental and/or computational analysis related to a novel scientific question.</skos:definition>
         <rdfs:label>Publication</rdfs:label>
     </owl:Class>
     
@@ -1935,7 +1981,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0001026</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0001505</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0004420</oboInOwl:hasDbXref>
-        <rdfs:comment>An assembled database containing nucleotide sequences obtained from various donors expected to be representative of or typical of the total genomic content of that species.</rdfs:comment>
+        <skos:definition>An assembled database containing nucleotide sequences obtained from various donors expected to be representative of or typical of the total genomic content of that species.</skos:definition>
         <rdfs:label>Reference Genome</rdfs:label>
     </owl:Class>
     
@@ -1956,7 +2002,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C20200</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C76125</oboInOwl:hasDbXref>
-        <rdfs:comment>The qualitative or quantitative result obtained from an assay.</rdfs:comment>
+        <skos:definition>The qualitative or quantitative result obtained from an assay.</skos:definition>
         <rdfs:label>Assay Result</rdfs:label>
     </owl:Class>
     
@@ -1993,7 +2039,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C19157</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C70699</oboInOwl:hasDbXref>
-        <rdfs:comment>Fresh/frozen tissues harvested from organs, primary cells or cell lines grown in culture from which DNA, RNA and/or proteins are extracted as technical or biological replicates.</rdfs:comment>
+        <skos:definition>Fresh/frozen tissues harvested from organs, primary cells or cell lines grown in culture from which DNA, RNA and/or proteins are extracted as technical or biological replicates.</skos:definition>
         <rdfs:label>Sample</rdfs:label>
     </owl:Class>
     
@@ -2011,7 +2057,7 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>The categorization of the sample&apos;s origin into cell culture, primary cells or tissue (frozen or fresh).</rdfs:comment>
+        <skos:definition>The categorization of the sample&apos;s origin into cell culture, primary cells or tissue (frozen or fresh).</skos:definition>
         <rdfs:label>Sample Type</rdfs:label>
     </owl:Class>
     
@@ -2028,7 +2074,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A raw signal recorded by the detector of a mass spectrometer corresponding to the intensity/abundance of a charged ion fragment produced by previous ionization and fragmentation steps.</rdfs:comment>
+        <skos:definition>A raw signal recorded by the detector of a mass spectrometer corresponding to the intensity/abundance of a charged ion fragment produced by previous ionization and fragmentation steps.</skos:definition>
         <rdfs:label>Spectrum</rdfs:label>
     </owl:Class>
     
@@ -2062,7 +2108,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Assignment of a unique mass spectrum to a peptide.</rdfs:comment>
+        <skos:definition>Assignment of a unique mass spectrum to a peptide.</skos:definition>
         <rdfs:label>Spectrum-Peptide Identification</rdfs:label>
     </owl:Class>
     
@@ -2080,7 +2126,7 @@
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP102340-9</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/MTHU008392</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/MTHU039788</oboInOwl:hasDbXref>
-        <rdfs:comment>An investigation conducted to answer  specific predetermined biological questions.</rdfs:comment>
+        <skos:definition>An investigation conducted to answer specific predetermined biological questions.</skos:definition>
         <rdfs:label>Study</rdfs:label>
     </owl:Class>
     
@@ -2105,7 +2151,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000479</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#PortionOfTissue</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.phoc.org.cn/pmo/class/PMO_00000159</oboInOwl:hasDbXref>
-        <rdfs:comment>A level of cellular classification/organization of multicellular organisms consisting of an aggregation of structurally and functionally similar cell types.</rdfs:comment>
+        <skos:definition>A level of cellular classification/organization of multicellular organisms consisting of an aggregation of structurally and functionally similar cell types.</skos:definition>
         <rdfs:label>Tissue</rdfs:label>
     </owl:Class>
     
@@ -2136,7 +2182,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C1936</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SO_0000673</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript</oboInOwl:hasDbXref>
-        <rdfs:comment>A polynucleotide sequence containing only exonic regions and synthesized after removing introns and other non-coding regions from the original genomic sequence by splicing.</rdfs:comment>
+        <skos:definition>A polynucleotide sequence containing only exonic regions and synthesized after removing introns and other non-coding regions from the original genomic sequence by splicing.</skos:definition>
         <rdfs:label>Transcript</rdfs:label>
     </owl:Class>
     
@@ -2189,16 +2235,16 @@
      -->
 
     <rdf:Description rdf:about="https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#patient">
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C16960</oboInOwl:hasDbXref>
-        <rdfs:label>Patient</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP66710-2</oboInOwl:hasDbXref>
-        <rdfs:comment>An individual who may or may not receive medical treatment or surgery and may be healthy or suffering from cancer, from whom tissue samples are harvested for omics analysis.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP6985-8</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP29749-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Patient</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LA4634-7</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OAE_0001817</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Patient</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP6985-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP310005-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C16960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP29749-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/LNC/LP66710-2</oboInOwl:hasDbXref>
+        <rdfs:label>Patient</rdfs:label>
+        <skos:definition>An individual who may or may not receive medical treatment or surgery and may be healthy or suffering from cancer, from whom tissue samples are harvested for omics analysis.</skos:definition>
     </rdf:Description>
     
 
@@ -2234,4 +2280,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
