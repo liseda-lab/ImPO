@@ -1111,7 +1111,8 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/DOID_162</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/HP_0002664</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MONDO_0004992</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C9305</oboInOwl:hasDbXref>        
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OBI_1110053</oboInOwl:hasDbXref>
         <skos:definition>A group of diseases that are characterized by uncontrolled cellular growth and, in some cases, metastasis or spread to organs away from the site of origin that result from intracellular mutational events.</skos:definition>
         <rdfs:label>Cancer</rdfs:label>
     </owl:Class>
@@ -1621,6 +1622,7 @@
         <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/PDQ/CDR0000486889</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C17156</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0002766</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OBI_0000470</oboInOwl:hasDbXref>
         <skos:definition>An analytical technique that measures the presence and the amount of a particular analyte in a sample by measuring the intensity/abundance of charged ionic species formed during the analyte fragmentation within the sample.</skos:definition>
         <rdfs:label>Mass Spectrometry</rdfs:label>
     </owl:Class>
@@ -1731,6 +1733,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/OBI_0000093</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1956,6 +1960,7 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C19026</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/NCIT_C48471</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.ifomis.org/acgt/1.0#Publication</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/IAO_0000311</oboInOwl:hasDbXref>
         <skos:definition>A submitted and accepted version of a research article detailing experimental and/or computational analysis related to a novel scientific question.</skos:definition>
         <rdfs:label>Publication</rdfs:label>
     </owl:Class>
