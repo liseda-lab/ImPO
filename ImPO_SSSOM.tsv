@@ -224,78 +224,78 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0013067	UBERON_0013067	semapv:LexicalMatching	Colorectal	colorectal mucosa
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carcinoma	skos:exactMatch	pmapp-pmo.owl	PMO_00008232	http://www.phoc.org.cn/pmo/class/PMO_00008232	semapv:LexicalMatching	Clear Cell Renal Cell Carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	pmapp-pmo.owl	PMO_00010500	http://www.phoc.org.cn/pmo/class/PMO_00010500	semapv:LexicalMatching	Brain Cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	pmapp-pmo.owl	PMO_00010511	http://www.phoc.org.cn/pmo/class/PMO_00010511	semapv:LexicalMatching	Glioblastoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	pmapp-pmo.owl	PMO_00014415	http://www.phoc.org.cn/pmo/class/PMO_00014415	semapv:LexicalMatching	Acute Myeloid Leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	pmapp-pmo.owl	PMO_00014421	http://www.phoc.org.cn/pmo/class/PMO_00014421	semapv:LexicalMatching	Glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peptide	skos:exactMatch	pmapp-pmo.owl	PMO_00021328	http://www.phoc.org.cn/pmo/class/PMO_00021328	semapv:LexicalMatching	Peptide
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	human_leukocyte_antigen	skos:exactMatch	pmapp-pmo.owl	PMO_00022917	http://www.phoc.org.cn/pmo/class/PMO_00022917	semapv:LexicalMatching	Human Leukocyte Antigen
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	pmapp-pmo.owl	PMO_00035818	http://www.phoc.org.cn/pmo/class/PMO_00035818	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	pmapp-pmo.owl	PMO_00035835	http://www.phoc.org.cn/pmo/class/PMO_00035835	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	genomic_mutation	skos:exactMatch	pmapp-pmo.owl	PMO_00035855	http://www.phoc.org.cn/pmo/class/PMO_00035855	semapv:LexicalMatching	Genomic Mutation
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	pmapp-pmo.owl	PMO_00035855	http://www.phoc.org.cn/pmo/class/PMO_00035855	semapv:LexicalMatching	Mutation
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	pmapp-pmo.owl	PMO_00038013	http://www.phoc.org.cn/pmo/class/PMO_00038013	semapv:LexicalMatching	Glioblastoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	pmapp-pmo.owl	PMO_00085228	http://www.phoc.org.cn/pmo/class/PMO_00085228	semapv:LexicalMatching	Leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	pmapp-pmo.owl	PMO_00085552	http://www.phoc.org.cn/pmo/class/PMO_00085552	semapv:LexicalMatching	Glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	cl.owl	PR_000000001	http://purl.obolibrary.org/obo/PR_000000001	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	IMGT	protein	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	so.owl	SO_0000104	http://purl.obolibrary.org/obo/SO_0000104	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	so.owl	SO_0000104	http://purl.obolibrary.org/obo/SO_0000104	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	so.owl	SO_0000104	http://purl.obolibrary.org/obo/SO_0000104	semapv:LexicalMatching	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	so.owl	SO_0000109	http://purl.obolibrary.org/obo/SO_0000109	semapv:LexicalMatching	Mutation
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	mondo.owl	SO_0000673	http://purl.obolibrary.org/obo/SO_0000673	semapv:LexicalMatching	Transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	mondo.owl	SO_0000673	http://purl.obolibrary.org/obo/SO_0000673	semapv:LexicalMatching	Transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	mondo.owl	SO_0000673	http://purl.obolibrary.org/obo/SO_0000673	semapv:LexicalMatching	Transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	cl.owl	SO_0000704	http://purl.obolibrary.org/obo/SO_0000704	semapv:LexicalMatching	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	mondo.owl	SO_0001026	http://purl.obolibrary.org/obo/SO_0001026	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	mondo.owl	SO_0001026	http://purl.obolibrary.org/obo/SO_0001026	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	mondo.owl	SO_0001026	http://purl.obolibrary.org/obo/SO_0001026	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	mondo.owl	SO_0001026	http://purl.obolibrary.org/obo/SO_0001026	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	so.owl	SO_0001089	http://purl.obolibrary.org/obo/SO_0001089	semapv:LexicalMatching	Post Translational Modification
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	so.owl	SO_0001089	http://purl.obolibrary.org/obo/SO_0001089	semapv:LexicalMatching	Post Translational Modification
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	so.owl	SO_0001505	http://purl.obolibrary.org/obo/SO_0001505	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	so.owl	SO_0001505	http://purl.obolibrary.org/obo/SO_0001505	semapv:LexicalMatching	Reference Genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	doid.owl	SO_0001606	http://purl.obolibrary.org/obo/SO_0001606	semapv:LexicalMatching	Amino Acid Substitution
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	doid.owl	SO_0001606	http://purl.obolibrary.org/obo/SO_0001606	semapv:LexicalMatching	Amino Acid Substitution
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	motif	skos:exactMatch	so.owl	SO_0100017	http://purl.obolibrary.org/obo/SO_0100017	semapv:LexicalMatching	Motif
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	IMGT	transcript	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript	semapv:LexicalMatching	Transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	cl.owl	UBERON_0000479	http://purl.obolibrary.org/obo/UBERON_0000479	semapv:LexicalMatching	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	efo.owl	UBERON_0012652	http://purl.obolibrary.org/obo/UBERON_0012652	semapv:LexicalMatching	Colorectal
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	efo.owl	UBERON_0012652	http://purl.obolibrary.org/obo/UBERON_0012652	semapv:LexicalMatching	Colorectal
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	efo.owl	UBERON_0012652	http://purl.obolibrary.org/obo/UBERON_0012652	semapv:LexicalMatching	Colorectal
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	mondo.owl	UBERON_0013067	http://purl.obolibrary.org/obo/UBERON_0013067	semapv:LexicalMatching	Colorectal
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	mondo.owl	UBERON_0013067	http://purl.obolibrary.org/obo/UBERON_0013067	semapv:LexicalMatching	Colorectal
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carcinoma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00008232	PMO_00008232	semapv:LexicalMatching	Clear Cell Renal Cell Carcinoma	Clear Cell Renal Cell Carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00010500	PMO_00010500	semapv:LexicalMatching	Brain Cancer	Brain Neoplasm
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00010511	PMO_00010511	semapv:LexicalMatching	Glioblastoma	Glioblastoma Multiforme
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00014415	PMO_00014415	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute Myeloid Leukemia Pathway
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00014421	PMO_00014421	semapv:LexicalMatching	Glioma	Glioblastoma Multiforme Pathway
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peptide	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00021328	PMO_00021328	semapv:LexicalMatching	Peptide	Peptides
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	human_leukocyte_antigen	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00022917	PMO_00022917	semapv:LexicalMatching	Human Leukocyte Antigen	Histocompatibility Antigens Class I
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00035818	PMO_00035818	semapv:LexicalMatching	Gene	Gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00035835	PMO_00035835	semapv:LexicalMatching	Protein	Protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	genomic_mutation	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00035855	PMO_00035855	semapv:LexicalMatching	Genomic Mutation	Mutation
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00035855	PMO_00035855	semapv:LexicalMatching	Mutation	Mutation
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00038013	PMO_00038013	semapv:LexicalMatching	Glioblastoma	Glioblastoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00085228	PMO_00085228	semapv:LexicalMatching	Leukemia	Leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00085552	PMO_00085552	semapv:LexicalMatching	Glioma	Glioma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein	protein	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000104	SO_0000104	semapv:LexicalMatching	Protein	polypeptide
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000104	SO_0000104	semapv:LexicalMatching	Protein	polypeptide
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000104	SO_0000104	semapv:LexicalMatching	Protein	polypeptide
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000109	SO_0000109	semapv:LexicalMatching	Mutation	sequence_variant_obs
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000673	SO_0000673	semapv:LexicalMatching	Transcript	transcript
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000673	SO_0000673	semapv:LexicalMatching	Transcript	transcript
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000673	SO_0000673	semapv:LexicalMatching	Transcript	transcript
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001089	SO_0001089	semapv:LexicalMatching	Post Translational Modification	post_translationally_modified_region
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001089	SO_0001089	semapv:LexicalMatching	Post Translational Modification	post_translationally_modified_region
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference genome sequence
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference genome sequence
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001606	SO_0001606	semapv:LexicalMatching	Amino Acid Substitution	amino_acid_substitution
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001606	SO_0001606	semapv:LexicalMatching	Amino Acid Substitution	amino_acid_substitution
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	motif	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0100017	SO_0100017	semapv:LexicalMatching	Motif	polypeptide_conserved_motif
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript	transcript	semapv:LexicalMatching	Transcript	transcript
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0013067	UBERON_0013067	semapv:LexicalMatching	Colorectal	colorectal mucosa
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0013067	UBERON_0013067	semapv:LexicalMatching	Colorectal	colorectal mucosa
