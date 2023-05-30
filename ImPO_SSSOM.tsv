@@ -1,9 +1,39 @@
 subject_source	subject_id	predicate_id	object_source	object_id	mapping_justification	subject_label	object_label
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10537-1	LA10537-1	semapv:LexicalMatching	Colon Cancer	Colon Cancer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10541-3	LA10541-3	semapv:LexicalMatching	Kidney Cancer	Kidney Cancer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10545-4	LA10545-4	semapv:LexicalMatching	Leukemia	Leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA18201-6	LA18201-6	semapv:LexicalMatching	Gene	Gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA25513-5	LA25513-5	semapv:LexicalMatching	Cancer	Malignant Neoplasm
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA26787-4	LA26787-4	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute myeloid leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA4634-7	LA4634-7	semapv:LexicalMatching	Patient	Patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP102340-9	LP102340-9	semapv:LexicalMatching	Study	Study
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP15838-3	LP15838-3	semapv:LexicalMatching	Protein	Protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP199195-1	LP199195-1	semapv:LexicalMatching	Gene	Gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP200029-9	LP200029-9	semapv:LexicalMatching	Tissue	Tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP200064-6	LP200064-6	semapv:LexicalMatching	Tissue	Tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP29749-6	LP29749-6	semapv:LexicalMatching	Patient	*^patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP310005-6	LP310005-6	semapv:LexicalMatching	Patient	^Patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP32142-9	LP32142-9	semapv:LexicalMatching	Protein	Protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP61649-7	LP61649-7	semapv:LexicalMatching	Tissue	Tiss
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP66710-2	LP66710-2	semapv:LexicalMatching	Patient	Patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP6985-8	LP6985-8	semapv:LexicalMatching	Patient	Patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU001951	MTHU001951	semapv:LexicalMatching	Protein	Protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU008392	MTHU008392	semapv:LexicalMatching	Study	Study
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU039788	MTHU039788	semapv:LexicalMatching	Study	Study
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU049889	MTHU049889	semapv:LexicalMatching	Tissue	Tissue
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/114500	114500	semapv:LexicalMatching	Colon Cancer	colorectal cancer
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/114550	114550	semapv:LexicalMatching	Hepatocellular Carcinoma	hepatocellular carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/114550	114550	semapv:LexicalMatching	Liver Cancer	hepatocellular carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/607585	607585	semapv:LexicalMatching	Kidney Cancer	atm serine/threonine kinase
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.obolibrary.org/obo/CCTO_000070	CCTO_000070	semapv:LexicalMatching	Cancer	assay
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU007776	MTHU007776	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute myeloid leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008946	MTHU008946	semapv:LexicalMatching	Hepatocellular Carcinoma	Hepatocellular carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008964	MTHU008964	semapv:LexicalMatching	Glioblastoma	Glioblastoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008966	MTHU008966	semapv:LexicalMatching	Leukemia	Leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU011462	MTHU011462	semapv:LexicalMatching	Glioma	Glioma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU017046	MTHU017046	semapv:LexicalMatching	Colon Cancer	Colon cancer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU019145	MTHU019145	semapv:LexicalMatching	Liver Cancer	Primary liver cancer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU036792	MTHU036792	semapv:LexicalMatching	Glioblastoma	Glioblastoma multiforme
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU070317	MTHU070317	semapv:LexicalMatching	Cancer	Cancer
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000038140	CDR0000038140	semapv:LexicalMatching	Kidney Cancer	renal cell carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000038717	CDR0000038717	semapv:LexicalMatching	Brain Cancer	adult brain tumor
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000038958	CDR0000038958	semapv:LexicalMatching	Brain Cancer	brain neoplasm
@@ -17,6 +47,8 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMat
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000043424	CDR0000043424	semapv:LexicalMatching	Acute Myeloid Leukemia	acute myeloid leukemia
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000256172	CDR0000256172	semapv:LexicalMatching	Gene	gene
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mass_spectrometry	skos:exactMatch	http://purl.bioontology.org/ontology/PDQ/CDR0000486889	CDR0000486889	semapv:LexicalMatching	Mass Spectrometry	mass spectrometry
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/STY/T024	T024	semapv:LexicalMatching	Tissue	Tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.obolibrary.org/obo/CCTO_000070	CCTO_000070	semapv:LexicalMatching	Cancer	assay
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/CHEBI_16541	CHEBI_16541	semapv:LexicalMatching	Protein	protein polypeptide chain
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peptide	skos:exactMatch	http://purl.obolibrary.org/obo/CHEBI_16670	CHEBI_16670	semapv:LexicalMatching	Peptide	peptide
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/CHEBI_36080	CHEBI_36080	semapv:LexicalMatching	Protein	protein
@@ -34,27 +66,10 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carc
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.obolibrary.org/obo/DOID_684	DOID_684	semapv:LexicalMatching	Hepatocellular Carcinoma	hepatocellular carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.obolibrary.org/obo/DOID_686	DOID_686	semapv:LexicalMatching	Hepatocellular Carcinoma	liver carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.obolibrary.org/obo/DOID_9119	DOID_9119	semapv:LexicalMatching	Acute Myeloid Leukemia	acute myeloid leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://www.drugtargetontology.org/dto/DTO_00200000	DTO_00200000	semapv:LexicalMatching	Gene	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000182	EFO_0000182	semapv:LexicalMatching	Hepatocellular Carcinoma	hepatocellular carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000182	EFO_0000182	semapv:LexicalMatching	Liver Cancer	hepatocellular carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000222	EFO_0000222	semapv:LexicalMatching	Acute Myeloid Leukemia	acute myeloid leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000330	EFO_0000330	semapv:LexicalMatching	Acute Myeloid Leukemia	childhood acute myeloid leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carcinoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000349	EFO_0000349	semapv:LexicalMatching	Clear Cell Renal Cell Carcinoma	clear cell renal carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000519	EFO_0000519	semapv:LexicalMatching	Glioblastoma	glioblastoma multiforme
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000520	EFO_0000520	semapv:LexicalMatching	Glioma	obsolete_glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000565	EFO_0000565	semapv:LexicalMatching	Leukemia	leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mass_spectrometry	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0002766	EFO_0002766	semapv:LexicalMatching	Mass Spectrometry	proteomic profiling by mass spectrometer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0002890	EFO_0002890	semapv:LexicalMatching	Kidney Cancer	renal carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0003833	EFO_0003833	semapv:LexicalMatching	Brain Cancer	brain neoplasm
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0004420	EFO_0004420	semapv:LexicalMatching	Reference Genome	genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0005543	EFO_0005543	semapv:LexicalMatching	Glioma	glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0005842	EFO_0005842	semapv:LexicalMatching	Colon Cancer	colorectal cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_1001950	EFO_1001950	semapv:LexicalMatching	Colon Cancer	colon carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/FMA_67257	FMA_67257	semapv:LexicalMatching	Protein	Protein
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/FMA_74402	FMA_74402	semapv:LexicalMatching	Gene	Structural gene
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/FMA_84116	FMA_84116	semapv:LexicalMatching	Reference Genome	Genome
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/FMA_9637	FMA_9637	semapv:LexicalMatching	Tissue	Portion of tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene	gene	semapv:LexicalMatching	Gene	gene
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	http://purl.obolibrary.org/obo/GENO_0000492	GENO_0000492	semapv:LexicalMatching	Mutation	mutation
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/GENO_0000914	GENO_0000914	semapv:LexicalMatching	Reference Genome	reference genome
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/GO_0043687	GO_0043687	semapv:LexicalMatching	Post Translational Modification	post-translational protein modification
@@ -69,25 +84,6 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	htt
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.obolibrary.org/obo/HP_0012174	HP_0012174	semapv:LexicalMatching	Glioblastoma	Glioblastoma multiforme
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/HP_0030692	HP_0030692	semapv:LexicalMatching	Brain Cancer	Brain neoplasm
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	publication	skos:exactMatch	http://purl.obolibrary.org/obo/IAO_0000311	IAO_0000311	semapv:LexicalMatching	Publication	publication
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10537-1	LA10537-1	semapv:LexicalMatching	Colon Cancer	Colon Cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10541-3	LA10541-3	semapv:LexicalMatching	Kidney Cancer	Kidney Cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA10545-4	LA10545-4	semapv:LexicalMatching	Leukemia	Leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA18201-6	LA18201-6	semapv:LexicalMatching	Gene	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA25513-5	LA25513-5	semapv:LexicalMatching	Cancer	Malignant Neoplasm
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA26787-4	LA26787-4	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute myeloid leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LA4634-7	LA4634-7	semapv:LexicalMatching	Patient	Patient
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Leukemia	Leukemia	semapv:LexicalMatching	Leukemia	Leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP102340-9	LP102340-9	semapv:LexicalMatching	Study	Study
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP15838-3	LP15838-3	semapv:LexicalMatching	Protein	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP199195-1	LP199195-1	semapv:LexicalMatching	Gene	Gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP200029-9	LP200029-9	semapv:LexicalMatching	Tissue	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP200064-6	LP200064-6	semapv:LexicalMatching	Tissue	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP29749-6	LP29749-6	semapv:LexicalMatching	Patient	*^patient
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP310005-6	LP310005-6	semapv:LexicalMatching	Patient	^Patient
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP32142-9	LP32142-9	semapv:LexicalMatching	Protein	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP61649-7	LP61649-7	semapv:LexicalMatching	Tissue	Tiss
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP66710-2	LP66710-2	semapv:LexicalMatching	Patient	Patient
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/LP6985-8	LP6985-8	semapv:LexicalMatching	Patient	Patient
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0001657	MONDO_0001657	semapv:LexicalMatching	Brain Cancer	brain cancer
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0002032	MONDO_0002032	semapv:LexicalMatching	Colon Cancer	colon carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0002367	MONDO_0002367	semapv:LexicalMatching	Kidney Cancer	kidney cancer
@@ -106,6 +102,7 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	sko
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0016216	MONDO_0016216	semapv:LexicalMatching	Hepatocellular Carcinoma	adult hepatocellular carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0018177	MONDO_0018177	semapv:LexicalMatching	Glioblastoma	glioblastoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0018531	MONDO_0018531	semapv:LexicalMatching	Liver Cancer	carcinoma of liver and intrahepatic biliary tract
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0018531	MONDO_0018531	semapv:LexicalMatching	Liver Cancer	carcinoma of liver and intrahepatic biliary tract
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0018874	MONDO_0018874	semapv:LexicalMatching	Acute Myeloid Leukemia	acute myeloid leukemia
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0020690	MONDO_0020690	semapv:LexicalMatching	Glioblastoma	adult glioblastoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0021042	MONDO_0021042	semapv:LexicalMatching	Glioma	glioma
@@ -113,19 +110,6 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMat
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0021211	MONDO_0021211	semapv:LexicalMatching	Brain Cancer	brain neoplasm
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0021632	MONDO_0021632	semapv:LexicalMatching	Brain Cancer	primary brain neoplasm
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0100342	MONDO_0100342	semapv:LexicalMatching	Glioma	malignant glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU001951	MTHU001951	semapv:LexicalMatching	Protein	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU007776	MTHU007776	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute myeloid leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU008392	MTHU008392	semapv:LexicalMatching	Study	Study
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008946	MTHU008946	semapv:LexicalMatching	Hepatocellular Carcinoma	Hepatocellular carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008964	MTHU008964	semapv:LexicalMatching	Glioblastoma	Glioblastoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU008966	MTHU008966	semapv:LexicalMatching	Leukemia	Leukemia
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU011462	MTHU011462	semapv:LexicalMatching	Glioma	Glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU017046	MTHU017046	semapv:LexicalMatching	Colon Cancer	Colon cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU019145	MTHU019145	semapv:LexicalMatching	Liver Cancer	Primary liver cancer
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU036792	MTHU036792	semapv:LexicalMatching	Glioblastoma	Glioblastoma multiforme
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	study	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU039788	MTHU039788	semapv:LexicalMatching	Study	Study
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/LNC/MTHU049889	MTHU049889	semapv:LexicalMatching	Tissue	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	http://purl.bioontology.org/ontology/OMIM/MTHU070317	MTHU070317	semapv:LexicalMatching	Cancer	Cancer
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	human_leukocyte_antigen	skos:exactMatch	http://purl.obolibrary.org/obo/NCIT_C121977	NCIT_C121977	semapv:LexicalMatching	Human Leukocyte Antigen	HLA Complex
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/NCIT_C12801	NCIT_C12801	semapv:LexicalMatching	Tissue	Tissue
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peripheral_blood_mononuclear_cells	skos:exactMatch	http://purl.obolibrary.org/obo/NCIT_C12954	NCIT_C12954	semapv:LexicalMatching	Peripheral Blood Mononuclear Cells	Peripheral Blood Mononuclear Cell
@@ -179,13 +163,50 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	cancer	skos:exactMatch	htt
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/OGG_0000000001	OGG_0000000001	semapv:LexicalMatching	Reference Genome	genome
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/OGG_0000000002	OGG_0000000002	semapv:LexicalMatching	Gene	gene
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://purl.obolibrary.org/obo/OMIM_137800	OMIM_137800	semapv:LexicalMatching	Glioma	glioma susceptibility 1
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000104	SO_0000104	semapv:LexicalMatching	Protein	polypeptide
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000109	SO_0000109	semapv:LexicalMatching	Mutation	sequence_variant_obs
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000673	SO_0000673	semapv:LexicalMatching	Transcript	transcript
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001089	SO_0001089	semapv:LexicalMatching	Post Translational Modification	post_translationally_modified_region
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference_genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference genome sequence
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001606	SO_0001606	semapv:LexicalMatching	Amino Acid Substitution	amino_acid_substitution
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	motif	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0100017	SO_0100017	semapv:LexicalMatching	Motif	polypeptide_conserved_motif
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0013067	UBERON_0013067	semapv:LexicalMatching	Colorectal	colorectal mucosa
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://www.drugtargetontology.org/dto/DTO_00200000	DTO_00200000	semapv:LexicalMatching	Gene	Gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000182	EFO_0000182	semapv:LexicalMatching	Hepatocellular Carcinoma	hepatocellular carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	liver_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000182	EFO_0000182	semapv:LexicalMatching	Liver Cancer	hepatocellular carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000222	EFO_0000222	semapv:LexicalMatching	Acute Myeloid Leukemia	acute myeloid leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000330	EFO_0000330	semapv:LexicalMatching	Acute Myeloid Leukemia	childhood acute myeloid leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carcinoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000349	EFO_0000349	semapv:LexicalMatching	Clear Cell Renal Cell Carcinoma	clear cell renal carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000519	EFO_0000519	semapv:LexicalMatching	Glioblastoma	glioblastoma multiforme
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000520	EFO_0000520	semapv:LexicalMatching	Glioma	obsolete_glioma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0000565	EFO_0000565	semapv:LexicalMatching	Leukemia	leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mass_spectrometry	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0002766	EFO_0002766	semapv:LexicalMatching	Mass Spectrometry	proteomic profiling by mass spectrometer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	kidney_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0002890	EFO_0002890	semapv:LexicalMatching	Kidney Cancer	renal carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	brain_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0003833	EFO_0003833	semapv:LexicalMatching	Brain Cancer	brain neoplasm
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0004420	EFO_0004420	semapv:LexicalMatching	Reference Genome	genome
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0005543	EFO_0005543	semapv:LexicalMatching	Glioma	glioma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_0005842	EFO_0005842	semapv:LexicalMatching	Colon Cancer	colorectal cancer
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://www.ebi.ac.uk/efo/EFO_1001950	EFO_1001950	semapv:LexicalMatching	Colon Cancer	colon carcinoma
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Leukemia	Leukemia	semapv:LexicalMatching	Leukemia	Leukemia
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Patient	Patient	semapv:LexicalMatching	Patient	Patient
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://www.ifomis.org/acgt/1.0#PortionOfTissue	PortionOfTissue	semapv:LexicalMatching	Tissue	Tissue
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Protein	Protein	semapv:LexicalMatching	Protein	Protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	publication	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Publication	Publication	semapv:LexicalMatching	Publication	Publication
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene	gene	semapv:LexicalMatching	Gene	gene
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peptide	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#peptide	peptide	semapv:LexicalMatching	Peptide	peptide
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein	protein	semapv:LexicalMatching	Protein	protein
+https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript	transcript	semapv:LexicalMatching	Transcript	transcript
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.orpha.net/ORDO/Orphanet_182067	Orphanet_182067	semapv:LexicalMatching	Glioma	Glial tumor
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	clear_cell_renal_cell_carcinoma	skos:exactMatch	http://www.orpha.net/ORDO/Orphanet_319276	Orphanet_319276	semapv:LexicalMatching	Clear Cell Renal Cell Carcinoma	Clear cell renal carcinoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.orpha.net/ORDO/Orphanet_360	Orphanet_360	semapv:LexicalMatching	Glioblastoma	Glioblastoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.orpha.net/ORDO/Orphanet_519	Orphanet_519	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute myeloid leukemia
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	hepatocellular_carcinoma	skos:exactMatch	http://www.orpha.net/ORDO/Orphanet_88673	Orphanet_88673	semapv:LexicalMatching	Hepatocellular Carcinoma	Hepatocellular carcinoma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	patient	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Patient	Patient	semapv:LexicalMatching	Patient	Patient
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	peptide	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#peptide	peptide	semapv:LexicalMatching	Peptide	peptide
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00000159	PMO_00000159	semapv:LexicalMatching	Tissue	Tissues
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	acute_myeloid_leukemia	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00001224	PMO_00001224	semapv:LexicalMatching	Acute Myeloid Leukemia	Acute Myeloid Leukemia
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colon_cancer	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00005638	PMO_00005638	semapv:LexicalMatching	Colon Cancer	Colon Cancer
@@ -204,23 +225,3 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	h
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioblastoma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00038013	PMO_00038013	semapv:LexicalMatching	Glioblastoma	Glioblastoma
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	leukemia	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00085228	PMO_00085228	semapv:LexicalMatching	Leukemia	Leukemia
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	glioma	skos:exactMatch	http://www.phoc.org.cn/pmo/class/PMO_00085552	PMO_00085552	semapv:LexicalMatching	Glioma	Glioma
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://www.ifomis.org/acgt/1.0#PortionOfTissue	PortionOfTissue	semapv:LexicalMatching	Tissue	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/PR_000000001	PR_000000001	semapv:LexicalMatching	Protein	protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Protein	Protein	semapv:LexicalMatching	Protein	Protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#protein	protein	semapv:LexicalMatching	Protein	protein
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	publication	skos:exactMatch	http://www.ifomis.org/acgt/1.0#Publication	Publication	semapv:LexicalMatching	Publication	Publication
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	protein	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000104	SO_0000104	semapv:LexicalMatching	Protein	polypeptide
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	mutation	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000109	SO_0000109	semapv:LexicalMatching	Mutation	sequence_variant_obs
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000673	SO_0000673	semapv:LexicalMatching	Transcript	transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0000704	SO_0000704	semapv:LexicalMatching	Gene	gene
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001089	SO_0001089	semapv:LexicalMatching	Post Translational Modification	post_translationally_modified_region
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference_genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001606	SO_0001606	semapv:LexicalMatching	Amino Acid Substitution	amino_acid_substitution
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	motif	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0100017	SO_0100017	semapv:LexicalMatching	Motif	polypeptide_conserved_motif
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.bioontology.org/ontology/STY/T024	T024	semapv:LexicalMatching	Tissue	Tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	transcript	skos:exactMatch	http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#transcript	transcript	semapv:LexicalMatching	Transcript	transcript
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0012652	UBERON_0012652	semapv:LexicalMatching	Colorectal	colorectum
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	colorectal	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0013067	UBERON_0013067	semapv:LexicalMatching	Colorectal	colorectal mucosa
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference genome sequence
