@@ -171,7 +171,6 @@ https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	gene	skos:exactMatch	http:
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001026	SO_0001026	semapv:LexicalMatching	Reference Genome	genome
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	post_translational_modification	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001089	SO_0001089	semapv:LexicalMatching	Post Translational Modification	post_translationally_modified_region
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference_genome
-https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	reference_genome	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001505	SO_0001505	semapv:LexicalMatching	Reference Genome	reference genome sequence
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	amino_acid_substitution	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0001606	SO_0001606	semapv:LexicalMatching	Amino Acid Substitution	amino_acid_substitution
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	motif	skos:exactMatch	http://purl.obolibrary.org/obo/SO_0100017	SO_0100017	semapv:LexicalMatching	Motif	polypeptide_conserved_motif
 https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl	tissue	skos:exactMatch	http://purl.obolibrary.org/obo/UBERON_0000479	UBERON_0000479	semapv:LexicalMatching	Tissue	tissue
