@@ -54,7 +54,7 @@
     #part_of study
     rr:predicateObjectMap [#IN
         rr:predicate impo:part_of;
-        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride id}";
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride_id}";
             rr:termType rr:IRI;   
     ];
     ].
@@ -119,7 +119,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spec_pep_id_{Sequence}"
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#spec_pep_id_{Spectrum Name}"
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;
@@ -202,7 +202,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{#}"
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}"
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;
@@ -215,7 +215,7 @@
     #has_value - Mass Shift
     rr:predicateObjectMap [
     rr:predicate impo:has_value;
-    rr:objectMap [ rml:reference "Mass Shift" ]
+    rr:objectMap [ rml:reference "Mass Shift_x" ]
     ];
     #occurs_in - Sequence
     rr:predicateObjectMap [#IN
@@ -264,7 +264,7 @@
     #association_of - mass_shift
     rr:predicateObjectMap [#IN
         rr:predicate impo:association_of;
-        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{#}";
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}";
             rr:termType rr:IRI;   
         ];
     ].
@@ -289,7 +289,7 @@
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;
-    rr:objectMap [ rr:constant impo:spectrum_peptide_identification ]
+    rr:objectMap [ rr:constant impo:associated_with_ptm ]
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;
@@ -303,7 +303,7 @@
     #has_source - mass_shift
     rr:predicateObjectMap [
         rr:predicate impo:has_source;
-        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{#}";
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}";
             rr:termType rr:IRI;   
         ];
     ];
@@ -331,7 +331,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride id}"
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{pride_id}"
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;
@@ -344,7 +344,7 @@
     #has_id - pride id
     rr:predicateObjectMap [
     rr:predicate impo:has_id;
-    rr:objectMap [ rml:reference "pride id" ]
+    rr:objectMap [ rml:reference "pride_id" ]
     ].
 # ----------------------------------------------------------------------------------------------------------------
 

@@ -26,7 +26,7 @@
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Gene stable ID}"
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Gene name}"
     ];
     rr:predicateObjectMap [
     rr:predicate rdf:type;

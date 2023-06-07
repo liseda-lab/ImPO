@@ -1,0 +1,142 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix impo: <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#> .
+
+#-----------  FILE: opensearch_merged.tsv
+# ----------------------------------------------------------------------------------------------------------------
+# MASS SHIFT
+<#MassShift_os> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/opensearch_merged_lesscol.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:mass_shift ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_value - Mass Shift
+    rr:predicateObjectMap [
+    rr:predicate impo:has_value;
+    rr:objectMap [ rml:reference "Mass Shift_x" ]
+    ];
+    #occurs_in - Sequence
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:occurs_in;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Sequence}";
+            rr:termType rr:IRI;    
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# PTM
+<#PTM_os> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/opensearch_merged_lesscol.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Annotated Mod}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:post_translational_modification ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_annotation - Annotation Type
+    rr:predicateObjectMap [
+    rr:predicate impo:has_annotation;
+    rr:objectMap [ rml:reference "Annotation Type" ]
+    ];
+    #has_name - Annotated Mod
+    rr:predicateObjectMap [
+    rr:predicate impo:has_name;
+    rr:objectMap [ rml:reference "Annotated Mod" ]
+    ];
+    #association_of - mass_shift
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:association_of;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}";
+            rr:termType rr:IRI;   
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------------------------------
+# ASSOCIATED_WITH_PTM
+<#AssocWPTM_os> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../Files/opensearch_merged_lesscol.tsv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter "\t"
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#asso_ptm_{Position}"
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant impo:associated_with_ptm ]
+    ];
+    rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant owl:NamedIndividual ]
+    ];
+    #has_position - Position
+    rr:predicateObjectMap [
+    rr:predicate impo:has_position;
+    rr:objectMap [ rml:reference "Position" ]
+    ];
+    #has_source - mass_shift
+    rr:predicateObjectMap [
+        rr:predicate impo:has_source;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#mass_shift_{Sequence}_{Mass Shift_x}";
+            rr:termType rr:IRI;   
+        ];
+    ];
+    #has_target - post_translational_modification 
+    rr:predicateObjectMap [#IN
+        rr:predicate impo:has_target;
+        rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Annotated Mod}";
+            rr:termType rr:IRI;  
+        ];
+    ].
+# ----------------------------------------------------------------------------------------------------------------
+## THE END ~~ 

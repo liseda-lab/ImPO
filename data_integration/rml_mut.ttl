@@ -103,9 +103,9 @@
     rr:predicate impo:has_hgvsp;
     rr:objectMap [ rml:reference "HGVSP" ]
     ];
-    #has_source - GENOMIC MUTATION
+    #has_cause - GENOMIC MUTATION
     rr:predicateObjectMap [
-        rr:predicate impo:has_source;
+        rr:predicate impo:has_cause;
         rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{GENOMIC_MUTATION_ID}";
         rr:termType rr:IRI;  
         ];
