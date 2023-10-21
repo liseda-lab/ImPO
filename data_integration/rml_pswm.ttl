@@ -131,6 +131,7 @@
         rr:predicate impo:has_source;
         rr:objectMap [ rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#motif_{pswm}";
               rr:termType rr:IRI;
+    ]
     ];
     # #has_target some human_leukocyte_antigen
     # rr:predicateObjectMap [#OUT
