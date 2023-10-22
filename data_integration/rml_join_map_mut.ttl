@@ -12,6 +12,7 @@
 
 #-----------  FILE: mappings
 # ----------------------------------------------------------------------------------------------------------------
+
 # PROTEIN
 <#ProteinMap_M> a rr:TriplesMap;
   rml:logicalSource [
@@ -29,10 +30,11 @@
     rr:template "https://github.com/liseda-lab/ImPO/blob/main/ImPO.owl#{Protein stable ID}"
     ].
 
-# ----------------------------------------------------------------------------------------------------------------
 
+# ----------------------------------------------------------------------------------------------------------------
 #-----------  FILE: CosmicMutantExport_nonredundant-immune-visible.tsv
 # ----------------------------------------------------------------------------------------------------------------
+
 # AMINO ACID SUBSTITUTION
 <#AAsubstitition_cosmic> a rr:TriplesMap;
   rml:logicalSource [
