@@ -12,6 +12,7 @@
 
 #-----------  FILE: immunopeptides_library.tsv
 # ----------------------------------------------------------------------------------------------------------------
+
 # PEPTIDE TRANSCRIPT ASSIGNMENT
 <#PeptideTranscrAssign_IL> a rr:TriplesMap;
   rml:logicalSource [
@@ -42,6 +43,7 @@
 
 #-----------  FILE: mappings
 # ----------------------------------------------------------------------------------------------------------------
+
 # TRANSCRIPT
 <#TranscriptMap_M> a rr:TriplesMap;
   rml:logicalSource [
