@@ -2,7 +2,7 @@
 
 
 1. For each sample extract the corresponding peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?sample_id ?peptide_sequence WHERE{
 ?sample imnp:has_id ?sample_id .
 ?mass_spec imnp:has_input ?sample .
@@ -14,7 +14,7 @@ SELECT DISTINCT ?sample_id ?peptide_sequence WHERE{
 
 
 2. For each HLA type extract the corresponding peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?hla_class?peptide_sequence WHERE{
         ?hla imnp:has_class ?hla_class . 
            ?motif_hla_assign imnp:has_target ?hla .
@@ -24,24 +24,24 @@ SELECT DISTINCT ?hla_class?peptide_sequence WHERE{
 }
 
 
-3. For each Genomic Hotspot extract the corresponding peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
-SELECT DISTINCT ?gh_id ?peptide_sequence WHERE{
+3. For each Epitope Contig extract the corresponding peptides.
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
+SELECT DISTINCT ?ec_id ?peptide_sequence WHERE{
          ?peptide imnp:has_sequence ?peptide_sequence .
             ?peptide imnp:part_of ?gh .
-        ?gh imnp:has_id ?gh_id .
+        ?gh imnp:has_id ?ec_id .
 }
 
 
 4. For each sample extract the MS instrument.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?sample_id ?mass_spec_instrument WHERE{ 
         ?sample imnp:has_id ?sample_id .
           ?mass_spec imnp:has_input ?sample .
           ?mass_spec imnp:has_instrument ?mass_spec_instrument .
 }
 5. For each protein extract the peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?protein_id ?peptide_sequence WHERE{
         ?protein imnp:has_id ?protein_id .
           ?ppa imnp:has_target ?protein .
@@ -51,7 +51,7 @@ SELECT DISTINCT ?protein_id ?peptide_sequence WHERE{
 
 
 6. For each gene extract the peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?gene_id ?peptide_sequence WHERE{
     ?gene imnp:has_id ?gene_id .
     ?transcript imnp:product_of ?gene .
@@ -64,7 +64,7 @@ SELECT DISTINCT ?gene_id ?peptide_sequence WHERE{
 
 
 7. For each PTM extract the position in the corresponding peptide.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?ptm_name ?awptm_position ?peptide_sequence WHERE{
     ?ptm imnp:has_name ?ptm_name .
     ?assoc_with_ptm imnp:has_target ?ptm .
@@ -76,7 +76,7 @@ SELECT DISTINCT ?ptm_name ?awptm_position ?peptide_sequence WHERE{
 
 
 8. Extract peptides that are shared across at least 10 non disease free samples.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?peptide_sequence WHERE{
     {
         SELECT ?peptide_sequence ?sample WHERE {
@@ -99,7 +99,7 @@ SELECT DISTINCT ?peptide_sequence WHERE{
 
 
 9. For each peptide, extract all associated mutations and their genomic coordinates.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 SELECT DISTINCT ?peptide_sequence ?geno_mut_id ?geno_mut_start_position ?geno_mut_end_position ?geno_mut_chromosome_number WHERE{
     ?peptide imnp:has_sequence ?peptide_sequence .
     ?aa_subst imnp:occurs_in ?peptide .
@@ -111,11 +111,11 @@ SELECT DISTINCT ?peptide_sequence ?geno_mut_id ?geno_mut_start_position ?geno_mu
 }
 
 
-10. For each Genomic Hotspot, extract all associated mutations and their genomic coordinates.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
-SELECT DISTINCT ?gh_id ?geno_mut_id ?geno_mut_start ?geno_mut_end ?geno_mut_chr WHERE{
+10. For each Epitope Contig, extract all associated mutations and their genomic coordinates.
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
+SELECT DISTINCT ?ec_id ?geno_mut_id ?geno_mut_start ?geno_mut_end ?geno_mut_chr WHERE{
     ?gh a imnp:genomic_hotspot .
-    ?gh imnp:has_id ?gh_id .
+    ?gh imnp:has_id ?ec_id .
     ?genomic_mut imnp:occurs_in ?gh .
     ?genomic_mut imnp:has_cosmic_id ?geno_mut_id .
     ?genomic_mut imnp:has_start_position ?geno_mut_start .
@@ -125,7 +125,7 @@ SELECT DISTINCT ?gh_id ?geno_mut_id ?geno_mut_start ?geno_mut_end ?geno_mut_chr 
 
 
 11. For each cancer, extract all associated mutations and proteins.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT DISTINCT ?cancer ?geno_mut_id ?has_prot_id WHERE{
@@ -142,7 +142,7 @@ SELECT DISTINCT ?cancer ?geno_mut_id ?has_prot_id WHERE{
 
 
 12. For each cancer, extract all associated mutations and peptides.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?cancer ?geno_mut_id ?peptide_sequence WHERE{
@@ -159,7 +159,7 @@ SELECT DISTINCT ?cancer ?geno_mut_id ?peptide_sequence WHERE{
 
 
 13. For each cancer, extract all associated mutations and PSMs.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?cancer ?geno_mut_id ?spectum_id WHERE{
@@ -179,7 +179,7 @@ SELECT DISTINCT ?cancer ?geno_mut_id ?spectum_id WHERE{
 
 
 14. For each cancer, extract all associated mutations and PTMs.
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?cancer ?geno_mut_id ?ptm_name WHERE{
@@ -198,16 +198,16 @@ SELECT DISTINCT ?cancer ?geno_mut_id ?ptm_name WHERE{
 }
 
 
-15. For each cancer, extract all associated mutations and Genomic Hotspots. 
-PREFIX imnp: <http://purl.obolibrary.org/obo/>
+15. For each cancer, extract all associated mutations and Epitope Contigs. 
+PREFIX imnp: <https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?cancer ?geno_mut_id ?gh_id WHERE{
+SELECT DISTINCT ?cancer ?geno_mut_id ?ec_id WHERE{
         ?cancer_type a owl:Class .
         ?cancer_type rdfs:label ?cancer.
         ?cancer_ind a ?cancer_type .
         ?gh imnp:has_role ?cancer_ind .
         ?gh imnp:has_part ?genomic_mut .
-        ?gh imnp:has_id ?gh_id .
+        ?gh imnp:has_id ?ec_id .
         ?genomic_mut imnp:has_cosmic_id ?geno_mut_id . 
 }
