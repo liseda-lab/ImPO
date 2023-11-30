@@ -235,7 +235,7 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_role">
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#role_of"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#cancer"/>
         <rdfs:label xml:lang="en">Has Role</rdfs:label>
         <skos:definition xml:lang="en">Property that refers to the function or purpose of a particular entity within an organism or system.</skos:definition>
@@ -391,7 +391,7 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#role_of">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#cancer"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:label xml:lang="en">Role Of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -672,7 +672,7 @@
     <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_gene_mutational_ratio -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_gene_mutational_ratio">
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">Has Gene Mutational Ratio</rdfs:label>
         <skos:definition xml:lang="en">Refers to the ratio of mutated to non-mutated copies of a gene in a population.</skos:definition>
@@ -702,7 +702,7 @@
     <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_immune_score -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_immune_score">
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">Has Immune Score</rdfs:label>
         <skos:definition xml:lang="en">Refers to a score or metric indicating the degree of immune system involvement in a disease or condition.</skos:definition>
@@ -744,7 +744,7 @@
     <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_overlap_score -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_overlap_score">
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">Has Overlap Score</rdfs:label>
         <skos:definition xml:lang="en">Refers to a score or metric indicating the degree of overlap or similarity between genomic hotspots.</skos:definition>
@@ -766,7 +766,7 @@
     <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_population_coverage -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_population_coverage">
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">Has Population Coverage</rdfs:label>
         <skos:definition xml:lang="en">Refers to the percentage of a population that is covered by the genomic hotspot data.</skos:definition>
@@ -791,7 +791,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig"/>
                     <rdf:Description rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#spectrum_peptide_identification"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1183,57 +1183,9 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#gene -->
+    <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#gene">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_region"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_reference_genome"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#reference_genome"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#product_of"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#transcript"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_id"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_name"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA18201-6</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP199195-1</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/PDQ/CDR0000042941</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/PDQ/CDR0000256172</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/FMA_74402</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/OGG_0000000002</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/SO_0000704</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.drugtargetontology.org/dto/DTO_00200000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.phoc.org.cn/pmo/class/PMO_00035818</oboInOwl:hasDbXref>
-        <rdfs:label xml:lang="en">Gene</rdfs:label>
-        <skos:definition xml:lang="en">A polynucleotide sequence consisting of both coding and non-coding regions transcribed and translated to produce a polypeptide (protein).</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_hotspot">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#epitope_contig">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_region"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1287,6 +1239,54 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Epitope Contig</rdfs:label>
         <skos:definition xml:lang="en">A proposed region on the human genome surveyed by the immune system at a high frequency.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#gene -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#gene">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#genomic_region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_reference_genome"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#reference_genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#product_of"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#transcript"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#has_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LA18201-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP199195-1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/PDQ/CDR0000042941</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/PDQ/CDR0000256172</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/FMA_74402</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/OGG_0000000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/SO_0000704</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.drugtargetontology.org/dto/DTO_00200000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.phoc.org.cn/pmo/class/PMO_00035818</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="en">Gene</rdfs:label>
+        <skos:definition xml:lang="en">A polynucleotide sequence consisting of both coding and non-coding regions transcribed and translated to produce a polypeptide (protein).</skos:definition>
     </owl:Class>
     
 
@@ -2222,8 +2222,8 @@
 
     <rdf:Description rdf:about="https://raw.githubusercontent.com/liseda-lab/ImPO/main/ImPO.owl#patient">
         <rdfs:label xml:lang="en">Patient</rdfs:label>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP66710-2</oboInOwl:hasDbXref>
         <skos:definition xml:lang="en">An individual who may or may not receive medical treatment or surgery and may be healthy or suffering from cancer, from whom tissue samples are harvested for omics analysis.</skos:definition>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP66710-2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C16960</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP29749-6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/LNC/LP6985-8</oboInOwl:hasDbXref>
