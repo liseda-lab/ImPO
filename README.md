@@ -11,5 +11,6 @@ ImPO files are available in our GitHub repository as follows:
 - Competency questions used to evaluate ImPO completeness: [ImPO_SPARQLcqs.txt](https://github.com/liseda-lab/ImPO/blob/main/ImPO_SPARQLcqs.txt).
 - A folder with the rml files used for data integration into ImPO: [data_integration](https://github.com/liseda-lab/ImPO/tree/main/data_integration).
 
-Reference:
-Faria D, Eugénio P, Contreiras Silva M, Balbi L, Bedran G, Kallor AA, Nunes S, Palkowski A, Waleron M, Alfaro JA, Pesquita C. The Immunopeptidomics Ontology (ImPO). Database (Oxford). 2024 Jun 7;2024:baae014. doi: 10.1093/database/baae014. PMID: 38857186; PMCID: PMC11164101.
+### Reference:
+
+Daniel Faria, Patrícia Eugénio, Marta Contreiras Silva, Laura Balbi, Georges Bedran, Ashwin Adrian Kallor, Susana Nunes, Aleksander Palkowski, Michal Waleron, Javier A Alfaro, Catia Pesquita, The Immunopeptidomics Ontology (ImPO), Database, Volume 2024, 2024, baae014, [https://doi.org/10.1093/database/baae014](https://doi.org/10.1093/database/baae014)
